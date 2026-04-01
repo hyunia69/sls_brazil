@@ -1,0 +1,4816 @@
+{
+  "name": "CASA",
+  "sample_rate": 30.0,
+  "legacy": true,
+  "bounds": {
+    "center": [
+      -1.4781951904296875e-05,
+      1.428725242614746,
+      1.3902950286865234
+    ],
+    "extent": [
+      2.1674742698669434,
+      4.262772560119629,
+      2.2620291709899902
+    ]
+  },
+  "bone_paths": [
+    "Armature.001",
+    "Armature.001/BnBacia.001",
+    "Armature.001/BnBacia.001/BnBacia",
+    "Armature.001/BnBacia.001/BnBacia/BnBacia_L",
+    "Armature.001/BnBacia.001/BnBacia/BnBacia_L/BnPerna.L",
+    "Armature.001/BnBacia.001/BnBacia/BnBacia_R",
+    "Armature.001/BnBacia.001/BnBacia/BnBacia_R/BnPerna.R",
+    "Armature.001/BnBacia.001/BnCol-01",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.001",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.001/BnDedo.1.L.008",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.001/BnDedo.1.L.008/BnDedo.1.L.007",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.002",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.002/BnDedo.1.L.010",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.002/BnDedo.1.L.010/BnDedo.1.L.009",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.003",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.003/BnDedo.1.L.012",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.003/BnDedo.1.L.012/BnDedo.1.L.011",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.004",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.004/BnDedo.1.L.014",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.004/BnDedo.1.L.014/BnDedo.1.L.013",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L/BnDedo.1.L.006",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L/BnDedo.1.L.006/BnDedo.1.L.005",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.001",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.001/BnDedo.1.R.008",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.001/BnDedo.1.R.008/BnDedo.1.R.007",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.002",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.002/BnDedo.1.R.010",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.002/BnDedo.1.R.010/BnDedo.1.R.009",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.003",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.003/BnDedo.1.R.012",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.003/BnDedo.1.R.012/BnDedo.1.R.011",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.004",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.004/BnDedo.1.R.014",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.004/BnDedo.1.R.014/BnDedo.1.R.013",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R/BnDedo.1.R.006",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R/BnDedo.1.R.006/BnDedo.1.R.005",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnBocaCanto.L",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnBocaCanto.R",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnBochecha.L",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnBochecha.R",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnDirigeQueixo",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnLabioCentroInfer",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnLabioCentroSuper",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnMandibula",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnMandibula/BnLingua",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnMandibula/BnLingua/BnLingua.003",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnMandibula/BnLingua/BnLingua.003/BnLingua.001",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnMandibula/BnLingua/BnLingua.003/BnLingua.001/BnLingua.002",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnOlho.L",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnOlho.R",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnOlhosMira",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnOlhosMira/BnOlhoMira.L",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnOlhosMira/BnOlhoMira.R",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnPalpebInfe.L",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnPalpebInfe.R",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnPalpebSuper.L",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnPalpebSuper.R",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnSobrancCentro",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnSobrancCentro.L",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnSobrancCentro.R",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnSobrancLateral.L",
+    "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnSobrancLateral.R",
+    "Armature.001/BnMaoOrient.L",
+    "Armature.001/BnMaoOrient.R",
+    "Armature.001/BnPolyV.L",
+    "Armature.001/BnPolyV.R",
+    "Armature.001/ik_FK.L",
+    "Armature.001/ik_FK.R"
+  ],
+  "position_curves": [
+    {
+      "path": "Armature.001",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnMaoOrient.R",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.08498689532279968,
+            0.002444180892780423,
+            0.026690196245908737
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.08498689532279968,
+            0.002444180892780423,
+            0.026690196245908737
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnPolyV.R",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.03376416489481926,
+            0.033936839550733566,
+            0.02724241465330124
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.03376416489481926,
+            0.033936839550733566,
+            0.02724241465330124
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/ik_FK.L",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.054658517241477966,
+            0.002609140006825328,
+            0.026690198108553886
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.054658517241477966,
+            0.002609140006825328,
+            0.026690198108553886
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/ik_FK.R",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.0007241821149364114,
+            -0.013985957019031048,
+            0.036105282604694366
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.0007241821149364114,
+            -0.013985957019031048,
+            0.036105282604694366
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnPolyV.L",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.03376416489481926,
+            0.033936839550733566,
+            0.02724241465330124
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.03376416489481926,
+            0.033936839550733566,
+            0.02724241465330124
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnMaoOrient.L",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.08498688787221909,
+            0.0024441720452159643,
+            0.026690198108553886
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.08498688787221909,
+            0.0024441720452159643,
+            0.026690198108553886
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.0,
+            -0.008925171568989754,
+            0.0
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.0,
+            -0.008925171568989754,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.0,
+            0.008925171568989754,
+            0.0
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.0,
+            0.008925171568989754,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.0,
+            0.010896340012550354,
+            0.0
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.0,
+            0.010896340012550354,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            4.440880418710377e-18,
+            0.01089628878980875,
+            0.0
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            4.440880418710377e-18,
+            0.01089628878980875,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            3.6331612980191906e-18,
+            0.010896358639001846,
+            7.4360281820951e-11
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            3.6331612980191906e-18,
+            0.010896358639001846,
+            7.4360281820951e-11
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            8.808654548708868e-16,
+            0.004243203438818455,
+            -1.4901160305669237e-09
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            8.808654548708868e-16,
+            0.004243203438818455,
+            -1.4901160305669237e-09
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnMandibula",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.000985104008577764,
+            0.00027775365742854774,
+            2.273377219808026e-07
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.000985104008577764,
+            0.00027775365742854774,
+            2.273377219808026e-07
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnMandibula/BnLingua",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            2.1093651980663708e-07,
+            -3.960104731959291e-05,
+            -0.001687834388576448
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            2.1093651980663708e-07,
+            -3.960104731959291e-05,
+            -0.001687834388576448
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnMandibula/BnLingua/BnLingua.003",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            9.549694070460149e-14,
+            0.0010773279936984181,
+            4.172487688691717e-09
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            9.549694070460149e-14,
+            0.0010773279936984181,
+            4.172487688691717e-09
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnMandibula/BnLingua/BnLingua.003/BnLingua.001",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -5.002220832646051e-14,
+            0.0010449349647387862,
+            -3.874129017589212e-09
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -5.002220832646051e-14,
+            0.0010449349647387862,
+            -3.874129017589212e-09
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnMandibula/BnLingua/BnLingua.003/BnLingua.001/BnLingua.002",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -5.456968088664825e-14,
+            0.001004353747703135,
+            2.673069765535274e-09
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -5.456968088664825e-14,
+            0.001004353747703135,
+            2.673069765535274e-09
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnSobrancCentro.L",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.005599082447588444,
+            0.011168049648404121,
+            0.001333080232143402
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.005599082447588444,
+            0.011168049648404121,
+            0.001333080232143402
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnSobrancCentro.R",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.005599092226475477,
+            0.0111680394038558,
+            -0.0013330557849258184
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.005599092226475477,
+            0.0111680394038558,
+            -0.0013330557849258184
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnSobrancLateral.L",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.006223179399967194,
+            0.012486014515161514,
+            0.0030235876329243183
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.006223179399967194,
+            0.012486014515161514,
+            0.0030235876329243183
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnSobrancLateral.R",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.006233840249478817,
+            0.012483703903853893,
+            -0.002967531094327569
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.006233840249478817,
+            0.012483703903853893,
+            -0.002967531094327569
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnPalpebSuper.L",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.004106889944523573,
+            0.008885747753083706,
+            0.00217320304363966
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.004106889944523573,
+            0.008885747753083706,
+            0.00217320304363966
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnPalpebInfe.L",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.004106714390218258,
+            0.00888665858656168,
+            0.0021738845389336348
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.004106714390218258,
+            0.00888665858656168,
+            0.0021738845389336348
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnOlho.L",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.004107808228582144,
+            0.008886784315109253,
+            0.0021739043295383453
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.004107808228582144,
+            0.008886784315109253,
+            0.0021739043295383453
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnOlho.R",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.0041078138165175915,
+            0.008886761032044888,
+            -0.0021738228388130665
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.0041078138165175915,
+            0.008886761032044888,
+            -0.0021738228388130665
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnSobrancCentro",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.00672325911000371,
+            0.010639841668307781,
+            1.6977406147589136e-08
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.00672325911000371,
+            0.010639841668307781,
+            1.6977406147589136e-08
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnLabioCentroSuper",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.007601316552609205,
+            0.0042020780965685844,
+            1.7272688523917168e-07
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.007601316552609205,
+            0.0042020780965685844,
+            1.7272688523917168e-07
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnBochecha.L",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.006044515408575535,
+            0.0030767146963626146,
+            0.002883100649341941
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.006044515408575535,
+            0.0030767146963626146,
+            0.002883100649341941
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnBochecha.R",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.006044527981430292,
+            0.0030766704585403204,
+            -0.0028829630464315414
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.006044527981430292,
+            0.0030766704585403204,
+            -0.0028829630464315414
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnLabioCentroInfer",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.007813042961061,
+            0.002843753667548299,
+            2.723668330872897e-07
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.007813042961061,
+            0.002843753667548299,
+            2.723668330872897e-07
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnBocaCanto.L",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.006361356936395168,
+            0.00327682844363153,
+            0.0018305586418136954
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.006361356936395168,
+            0.00327682844363153,
+            0.0018305586418136954
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnBocaCanto.R",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.006361363921314478,
+            0.0032768123783171177,
+            -0.0018304242985323071
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.006361363921314478,
+            0.0032768123783171177,
+            -0.0018304242985323071
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnDirigeQueixo",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.007056531962007284,
+            7.788583752699196e-05,
+            4.061247693698533e-07
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.007056531962007284,
+            7.788583752699196e-05,
+            4.061247693698533e-07
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnPalpebSuper.R",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.00410632137209177,
+            0.008886387571692467,
+            -0.0021738559007644653
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.00410632137209177,
+            0.008886387571692467,
+            -0.0021738559007644653
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnPalpebInfe.R",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.004108858294785023,
+            0.008886869996786118,
+            -0.002173822605982423
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.004108858294785023,
+            0.008886869996786118,
+            -0.002173822605982423
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnOlhosMira",
+      "keyframe_count": 20,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.017476411536335945,
+            0.01012565940618515,
+            3.8037420324599225e-08
+          ]
+        },
+        {
+          "time": 0.10000000149011612,
+          "value": [
+            0.017476411536335945,
+            0.010134912095963955,
+            -1.3355651162783033e-06
+          ]
+        },
+        {
+          "time": 0.13333334028720856,
+          "value": [
+            0.017476411536335945,
+            0.010137997567653656,
+            -2.408191221547895e-06
+          ]
+        },
+        {
+          "time": 0.1666666716337204,
+          "value": [
+            0.017476411536335945,
+            0.010141081176698208,
+            -3.7832655834790785e-06
+          ]
+        },
+        {
+          "time": 0.20000000298023224,
+          "value": [
+            0.017476411536335945,
+            0.010144166648387909,
+            -5.450928256323095e-06
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnOlhosMira/BnOlhoMira.L",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.0021180131006985903,
+            6.5060898890578756e-09,
+            -5.573008365900023e-08
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.0021180131006985903,
+            6.5060898890578756e-09,
+            -5.573008365900023e-08
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnOlhosMira/BnOlhoMira.R",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.002117927186191082,
+            2.2646077013632748e-08,
+            5.4616833722320735e-08
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.002117927186191082,
+            2.2646077013632748e-08,
+            5.4616833722320735e-08
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.004284544847905636,
+            0.0065270052291452885,
+            -0.00011071075277868658
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.004284544847905636,
+            0.0065270052291452885,
+            -0.00011071075277868658
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            4.4703482582342247e-10,
+            0.007705797906965017,
+            -1.5646218765041908e-09
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            4.4703482582342247e-10,
+            0.007705797906965017,
+            -1.5646218765041908e-09
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -5.9604643443123e-10,
+            0.02189548686146736,
+            -1.4901160305669237e-09
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -5.9604643443123e-10,
+            0.02189548686146736,
+            -1.4901160305669237e-09
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -1.8626450382086546e-10,
+            0.01045167911797762,
+            -5.587935114625964e-10
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -1.8626450382086546e-10,
+            0.01045167911797762,
+            -5.587935114625964e-10
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            2.2351741291171123e-10,
+            0.010450935922563076,
+            2.086162576020456e-09
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            2.2351741291171123e-10,
+            0.010450935922563076,
+            2.086162576020456e-09
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L",
+      "keyframe_count": 13,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.0022143383976072073,
+            0.0069630383513867855,
+            -1.9862502085743472e-05
+          ]
+        },
+        {
+          "time": 0.10000000149011612,
+          "value": [
+            0.002209086436778307,
+            0.006951950490474701,
+            -2.1386145817814395e-05
+          ]
+        },
+        {
+          "time": 0.20000000298023224,
+          "value": [
+            0.002193350112065673,
+            0.00693582883104682,
+            -2.595577279862482e-05
+          ]
+        },
+        {
+          "time": 0.36666667461395264,
+          "value": [
+            0.002147628692910075,
+            0.0068786838091909885,
+            -3.923505573766306e-05
+          ]
+        },
+        {
+          "time": 0.6666666865348816,
+          "value": [
+            0.002057586330920458,
+            0.006765501573681831,
+            -6.53833121759817e-05
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L/BnDedo.1.L.006",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.0,
+            0.001378712011501193,
+            7.450580152834618e-10
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.0,
+            0.001378712011501193,
+            7.450580152834618e-10
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L/BnDedo.1.L.006/BnDedo.1.L.005",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -7.450580152834618e-10,
+            0.0012753844494000077,
+            -3.278255444882916e-09
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -7.450580152834618e-10,
+            0.0012753844494000077,
+            -3.278255444882916e-09
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.001",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.0008536161039955914,
+            0.007562755141407251,
+            -3.5332737752469257e-05
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.0008536161039955914,
+            0.007562755141407251,
+            -3.5332737752469257e-05
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.001/BnDedo.1.L.008",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -4.4703482582342247e-10,
+            0.0017738882452249527,
+            -8.940696516468449e-10
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -4.4703482582342247e-10,
+            0.0017738882452249527,
+            -8.940696516468449e-10
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.001/BnDedo.1.L.008/BnDedo.1.L.007",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -4.4703482582342247e-10,
+            0.0018290053121745586,
+            -1.639127722441458e-09
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -4.4703482582342247e-10,
+            0.0018290053121745586,
+            -1.639127722441458e-09
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.002",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.0006937183206900954,
+            0.007812654599547386,
+            -4.431381603353657e-05
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.0006937183206900954,
+            0.007812654599547386,
+            -4.431381603353657e-05
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.002/BnDedo.1.L.010",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -2.98023217215615e-10,
+            0.0020253751426935196,
+            7.450580430390374e-11
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -2.98023217215615e-10,
+            0.0020253751426935196,
+            7.450580430390374e-11
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.002/BnDedo.1.L.010/BnDedo.1.L.009",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            5.9604643443123e-10,
+            0.0019563287496566772,
+            -7.450580430390374e-11
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            5.9604643443123e-10,
+            0.0019563287496566772,
+            -7.450580430390374e-11
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.003",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.002201820956543088,
+            0.007512173615396023,
+            0.000308344722725451
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.002201820956543088,
+            0.007512173615396023,
+            0.000308344722725451
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.003/BnDedo.1.L.012",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -5.029141547652216e-10,
+            0.0018347062868997455,
+            1.3783574281944766e-09
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -5.029141547652216e-10,
+            0.0018347062868997455,
+            1.3783574281944766e-09
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.003/BnDedo.1.L.012/BnDedo.1.L.011",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            5.029141547652216e-10,
+            0.001893515232950449,
+            -7.078051478259795e-10
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            5.029141547652216e-10,
+            0.001893515232950449,
+            -7.078051478259795e-10
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.004",
+      "keyframe_count": 6,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.0019947756081819534,
+            0.002594263758510351,
+            -0.00037254331982694566
+          ]
+        },
+        {
+          "time": 0.4333333373069763,
+          "value": [
+            -0.001958434469997883,
+            0.0027291285805404186,
+            -0.000436044909292832
+          ]
+        },
+        {
+          "time": 0.8666667342185974,
+          "value": [
+            -0.0019233535276725888,
+            0.0028628637082874775,
+            -0.0004991356399841607
+          ]
+        },
+        {
+          "time": 1.5666667222976685,
+          "value": [
+            -0.0019266223534941673,
+            0.0028576210606843233,
+            -0.0004991924506612122
+          ]
+        },
+        {
+          "time": 2.0999999046325684,
+          "value": [
+            -0.001970915123820305,
+            0.0026828134432435036,
+            -0.00041423796210438013
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.004/BnDedo.1.L.014",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            1.5459954427754496e-09,
+            0.002592030679807067,
+            4.842877210364804e-10
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            1.5459954427754496e-09,
+            0.002592030679807067,
+            4.842877210364804e-10
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.004/BnDedo.1.L.014/BnDedo.1.L.013",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -6.519257911286047e-10,
+            0.0022222548723220825,
+            1.760199652700578e-09
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -6.519257911286047e-10,
+            0.0022222548723220825,
+            1.760199652700578e-09
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.004284387454390526,
+            0.006527024321258068,
+            -0.00011071200424339622
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.004284387454390526,
+            0.006527024321258068,
+            -0.00011071200424339622
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -1.6950070236276815e-09,
+            0.007706048898398876,
+            -7.450580430390374e-11
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -1.6950070236276815e-09,
+            0.007706048898398876,
+            -7.450580430390374e-11
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -1.490116086078075e-10,
+            0.02189536765217781,
+            2.607703164514419e-09
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -1.490116086078075e-10,
+            0.02189536765217781,
+            2.607703164514419e-09
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -3.911554691260477e-10,
+            0.010451644659042358,
+            -4.4703482582342247e-10
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -3.911554691260477e-10,
+            0.010451644659042358,
+            -4.4703482582342247e-10
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -7.450580152834618e-10,
+            0.010450905188918114,
+            2.2351741291171123e-10
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -7.450580152834618e-10,
+            0.010450905188918114,
+            2.2351741291171123e-10
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R",
+      "keyframe_count": 13,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.0022144834510982037,
+            0.0069631850346922874,
+            -1.9994675312773325e-05
+          ]
+        },
+        {
+          "time": 0.10000000149011612,
+          "value": [
+            -0.002209227764979005,
+            0.006952103227376938,
+            -2.151548869733233e-05
+          ]
+        },
+        {
+          "time": 0.20000000298023224,
+          "value": [
+            -0.002193479100242257,
+            0.0069359843619167805,
+            -2.6070418243762106e-05
+          ]
+        },
+        {
+          "time": 0.36666667461395264,
+          "value": [
+            -0.0021477218251675367,
+            0.006878858432173729,
+            -3.93047921534162e-05
+          ]
+        },
+        {
+          "time": 0.6666666865348816,
+          "value": [
+            -0.002057609846815467,
+            0.006765706930309534,
+            -6.537228910019621e-05
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R/BnDedo.1.R.006",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -3.278255444882916e-09,
+            0.0013785188784822822,
+            8.940696516468449e-10
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -3.278255444882916e-09,
+            0.0013785188784822822,
+            8.940696516468449e-10
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R/BnDedo.1.R.006/BnDedo.1.R.005",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.0,
+            0.0012753864284604788,
+            1.043081288010228e-09
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.0,
+            0.0012753864284604788,
+            1.043081288010228e-09
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.001",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.0008537551620975137,
+            0.007562890648841858,
+            -3.5468936403049156e-05
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.0008537551620975137,
+            0.007562890648841858,
+            -3.5468936403049156e-05
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.001/BnDedo.1.R.008",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            8.940696516468449e-10,
+            0.0017737401649355888,
+            7.450580152834618e-10
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            8.940696516468449e-10,
+            0.0017737401649355888,
+            7.450580152834618e-10
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.001/BnDedo.1.R.008/BnDedo.1.R.007",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            7.450580152834618e-10,
+            0.0018291560700163245,
+            -1.043081288010228e-09
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            7.450580152834618e-10,
+            0.0018291560700163245,
+            -1.043081288010228e-09
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.002",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.0006936783902347088,
+            0.007812690921127796,
+            -4.437752068042755e-05
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.0006936783902347088,
+            0.007812690921127796,
+            -4.437752068042755e-05
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.002/BnDedo.1.R.010",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -5.9604643443123e-10,
+            0.0020253306720405817,
+            -7.450580430390374e-11
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -5.9604643443123e-10,
+            0.0020253306720405817,
+            -7.450580430390374e-11
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.002/BnDedo.1.R.010/BnDedo.1.R.009",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            2.98023217215615e-10,
+            0.0019563306123018265,
+            -7.450580430390374e-11
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            2.98023217215615e-10,
+            0.0019563306123018265,
+            -7.450580430390374e-11
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.003",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.0022017916198819876,
+            0.007512291427701712,
+            0.00030829495517537
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.0022017916198819876,
+            0.007512291427701712,
+            0.00030829495517537
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.003/BnDedo.1.R.012",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -2.98023217215615e-10,
+            0.0018347071018069983,
+            1.4901160305669237e-09
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -2.98023217215615e-10,
+            0.0018347071018069983,
+            1.4901160305669237e-09
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.003/BnDedo.1.R.012/BnDedo.1.R.011",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -1.8626451075975936e-11,
+            0.0018934145336970687,
+            -3.3527611242867295e-10
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -1.8626451075975936e-11,
+            0.0018934145336970687,
+            -3.3527611242867295e-10
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.004",
+      "keyframe_count": 6,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.001994627295061946,
+            0.0025943713262677193,
+            -0.0003726297290995717
+          ]
+        },
+        {
+          "time": 0.4333333373069763,
+          "value": [
+            0.0019582905806601048,
+            0.002729234518483281,
+            -0.00043612642912194133
+          ]
+        },
+        {
+          "time": 0.8666667342185974,
+          "value": [
+            0.0019232146441936493,
+            0.0028629740700125694,
+            -0.0004992144531570375
+          ]
+        },
+        {
+          "time": 1.5666667222976685,
+          "value": [
+            0.0019264834700152278,
+            0.0028577318880707026,
+            -0.0004992693429812789
+          ]
+        },
+        {
+          "time": 2.0999999046325684,
+          "value": [
+            0.0019707665778696537,
+            0.0026829238049685955,
+            -0.0004143217229284346
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.004/BnDedo.1.R.014",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -1.4435499462450707e-09,
+            0.002592091914266348,
+            4.842877210364804e-10
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -1.4435499462450707e-09,
+            0.002592091914266348,
+            4.842877210364804e-10
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.004/BnDedo.1.R.014/BnDedo.1.R.013",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -4.4703482582342247e-10,
+            0.002222193405032158,
+            -7.101334520420721e-10
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -4.4703482582342247e-10,
+            0.002222193405032158,
+            -7.101334520420721e-10
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnBacia",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.0,
+            0.008925171568989754,
+            0.0
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.0,
+            0.008925171568989754,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnBacia/BnBacia_L",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            4.52181974386367e-15,
+            0.004401720128953457,
+            0.0
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            4.52181974386367e-15,
+            0.004401720128953457,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnBacia/BnBacia_L/BnPerna.L",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -7.450580430390374e-11,
+            0.004729254636913538,
+            -3.725290215195187e-11
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -7.450580430390374e-11,
+            0.004729254636913538,
+            -3.725290215195187e-11
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnBacia/BnBacia_R",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            4.9378633520317305e-18,
+            0.004401720128953457,
+            0.0
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            4.9378633520317305e-18,
+            0.004401720128953457,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnBacia/BnBacia_R/BnPerna.R",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -3.725290215195187e-11,
+            0.004729254636913538,
+            3.911554691260477e-10
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -3.725290215195187e-11,
+            0.004729254636913538,
+            3.911554691260477e-10
+          ]
+        }
+      ]
+    }
+  ],
+  "rotation_curves": [
+    {
+      "path": "Armature.001",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.7071068286895752,
+            0.0,
+            -0.0,
+            0.7071067094802856
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.7071068286895752,
+            0.0,
+            -0.0,
+            0.7071067094802856
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnMaoOrient.R",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            2.384822437306866e-06,
+            5.4069786870059033e-08,
+            -0.655354380607605,
+            0.7553215622901917
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            2.384822437306866e-06,
+            5.4069786870059033e-08,
+            -0.655354380607605,
+            0.7553215622901917
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnPolyV.R",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -9.415696666792428e-08,
+            0.7071068286895752,
+            0.7071067094802856,
+            -9.415695956249692e-08
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -9.415696666792428e-08,
+            0.7071068286895752,
+            0.7071067094802856,
+            -9.415695956249692e-08
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/ik_FK.L",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.7071102261543274,
+            1.565351226417988e-08,
+            -5.379180038289633e-06,
+            0.7071033716201782
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.7071102261543274,
+            1.565351226417988e-08,
+            -5.379180038289633e-06,
+            0.7071033716201782
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/ik_FK.R",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.7071102261543274,
+            -1.565351226417988e-08,
+            5.379180038289633e-06,
+            0.7071033716201782
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.7071102261543274,
+            -1.565351226417988e-08,
+            5.379180038289633e-06,
+            0.7071033716201782
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnPolyV.L",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            9.415696666792428e-08,
+            0.7071068286895752,
+            0.7071067094802856,
+            9.415695956249692e-08
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            9.415696666792428e-08,
+            0.7071068286895752,
+            0.7071067094802856,
+            9.415695956249692e-08
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnMaoOrient.L",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            2.382578031756566e-06,
+            -5.148222825823723e-08,
+            0.6553544998168945,
+            0.7553214430809021
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            2.382578031756566e-06,
+            -5.148222825823723e-08,
+            0.6553544998168945,
+            0.7553214430809021
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.0,
+            0.0,
+            -0.0,
+            1.0
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.0,
+            0.0,
+            -0.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.698093056678772,
+            0.0,
+            -0.0,
+            0.7160070538520813
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.698093056678772,
+            0.0,
+            -0.0,
+            0.7160070538520813
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            2.0023435354232788e-07,
+            8.564254017073836e-08,
+            1.6986412276764895e-14,
+            1.0
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            2.0023435354232788e-07,
+            8.564254017073836e-08,
+            1.6986412276764895e-14,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03",
+      "keyframe_count": 3,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -1.3594052688858937e-05,
+            -1.6730201934933575e-07,
+            3.634431351793449e-13,
+            1.0
+          ]
+        },
+        {
+          "time": 1.633333444595337,
+          "value": [
+            0.0036536718253046274,
+            -0.0015883457381278276,
+            0.0010443170322105289,
+            0.9999915361404419
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -1.3594052688858937e-05,
+            -1.6730201934933575e-07,
+            3.634431351793449e-13,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.19056904315948486,
+            -2.7136158564644575e-07,
+            -8.380216343084612e-08,
+            0.9816737771034241
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.19056904315948486,
+            -2.7136158564644575e-07,
+            -8.380216343084612e-08,
+            0.9816737771034241
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.07183845341205597,
+            -0.703447699546814,
+            0.07183845341205597,
+            0.7034485340118408
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.07183845341205597,
+            -0.703447699546814,
+            0.07183845341205597,
+            0.7034485340118408
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnMandibula",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.5193373560905457,
+            0.4799951910972595,
+            -0.5192500352859497,
+            0.4798673987388611
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.5193373560905457,
+            0.4799951910972595,
+            -0.5192500352859497,
+            0.4798673987388611
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnMandibula/BnLingua",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.3160640001296997,
+            -0.0001119481457863003,
+            -1.8517208445700817e-05,
+            0.9487379193305969
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.3160640001296997,
+            -0.0001119481457863003,
+            -1.8517208445700817e-05,
+            0.9487379193305969
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnMandibula/BnLingua/BnLingua.003",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.07391698658466339,
+            1.2545507388495025e-06,
+            5.963485705251514e-08,
+            0.9972643852233887
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.07391698658466339,
+            1.2545507388495025e-06,
+            5.963485705251514e-08,
+            0.9972643852233887
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnMandibula/BnLingua/BnLingua.003/BnLingua.001",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.11979960650205612,
+            2.020164856730844e-06,
+            1.8371777343872964e-07,
+            0.9927980899810791
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.11979960650205612,
+            2.020164856730844e-06,
+            1.8371777343872964e-07,
+            0.9927980899810791
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnMandibula/BnLingua/BnLingua.003/BnLingua.001/BnLingua.002",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.13169148564338684,
+            2.177980150008807e-06,
+            2.2380470454663737e-07,
+            0.9912907481193542
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.13169148564338684,
+            2.177980150008807e-06,
+            2.2380470454663737e-07,
+            0.9912907481193542
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnSobrancCentro.L",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.07296379655599594,
+            0.6788808703422546,
+            0.029138313606381416,
+            0.7300329208374023
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.07296379655599594,
+            0.6788808703422546,
+            0.029138313606381416,
+            0.7300329208374023
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnSobrancCentro.R",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.029141893610358238,
+            0.7300323843955994,
+            0.07296420633792877,
+            0.6788812279701233
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.029141893610358238,
+            0.7300323843955994,
+            0.07296420633792877,
+            0.6788812279701233
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnSobrancLateral.L",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.07296185940504074,
+            0.6788817048072815,
+            0.02913546748459339,
+            0.7300323843955994
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.07296185940504074,
+            0.6788817048072815,
+            0.02913546748459339,
+            0.7300323843955994
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnSobrancLateral.R",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.029139284044504166,
+            0.7300324440002441,
+            0.07295030355453491,
+            0.6788828372955322
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.029139284044504166,
+            0.7300324440002441,
+            0.07295030355453491,
+            0.6788828372955322
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnPalpebSuper.L",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.07010304927825928,
+            -0.10648556053638458,
+            -0.4281160533428192,
+            0.8946859836578369
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.07010304927825928,
+            -0.10648556053638458,
+            -0.4281160533428192,
+            0.8946859836578369
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnPalpebInfe.L",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.8503549098968506,
+            0.509501576423645,
+            0.1303369253873825,
+            0.017803918570280075
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.8503549098968506,
+            0.509501576423645,
+            0.1303369253873825,
+            0.017803918570280075
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnOlho.L",
+      "keyframe_count": 3,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.4775235056877136,
+            -0.5216329097747803,
+            -0.4752262532711029,
+            0.523479163646698
+          ]
+        },
+        {
+          "time": 1.3000000715255737,
+          "value": [
+            -0.4761122465133667,
+            -0.5240053534507751,
+            -0.47193506360054016,
+            0.5253692269325256
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.4775235056877136,
+            -0.5216329097747803,
+            -0.4752262532711029,
+            0.523479163646698
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnOlho.R",
+      "keyframe_count": 3,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.47521793842315674,
+            -0.5234866738319397,
+            -0.4775184690952301,
+            0.5216375589370728
+          ]
+        },
+        {
+          "time": 1.633333444595337,
+          "value": [
+            -0.4747547507286072,
+            -0.525334358215332,
+            -0.47510629892349243,
+            0.5224038362503052
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.47521793842315674,
+            -0.5234866738319397,
+            -0.4775184690952301,
+            0.5216375589370728
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnSobrancCentro",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.06530426442623138,
+            0.6797547936439514,
+            0.039466653019189835,
+            0.7294594645500183
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.06530426442623138,
+            0.6797547936439514,
+            0.039466653019189835,
+            0.7294594645500183
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnLabioCentroSuper",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.05468105897307396,
+            -0.7049874067306519,
+            0.05469382181763649,
+            0.7049903273582458
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.05468105897307396,
+            -0.7049874067306519,
+            0.05469382181763649,
+            0.7049903273582458
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnBochecha.L",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.0586649514734745,
+            0.6803520321846008,
+            0.04845694079995155,
+            0.7289248704910278
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.0586649514734745,
+            0.6803520321846008,
+            0.04845694079995155,
+            0.7289248704910278
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnBochecha.R",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.048461172729730606,
+            0.7289246916770935,
+            0.058659959584474564,
+            0.6803524494171143
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.048461172729730606,
+            0.7289246916770935,
+            0.058659959584474564,
+            0.6803524494171143
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnLabioCentroInfer",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.05460771918296814,
+            -0.7049945592880249,
+            0.05462419614195824,
+            0.7049943208694458
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.05460771918296814,
+            -0.7049945592880249,
+            0.05462419614195824,
+            0.7049943208694458
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnBocaCanto.L",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.06372391432523727,
+            0.6798772811889648,
+            0.041631344705820084,
+            0.7293648719787598
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.06372391432523727,
+            0.6798772811889648,
+            0.041631344705820084,
+            0.7293648719787598
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnBocaCanto.R",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.04163692891597748,
+            0.7293645739555359,
+            0.06372025609016418,
+            0.679877519607544
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.04163692891597748,
+            0.7293645739555359,
+            0.06372025609016418,
+            0.679877519607544
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnDirigeQueixo",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.5211765170097351,
+            -0.47788572311401367,
+            0.521190345287323,
+            -0.47787120938301086
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.5211765170097351,
+            -0.47788572311401367,
+            0.521190345287323,
+            -0.47787120938301086
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnPalpebSuper.R",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.07388744503259659,
+            0.1038987785577774,
+            -0.4281156361103058,
+            0.8946858048439026
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.07388744503259659,
+            0.1038987785577774,
+            -0.4281156361103058,
+            0.8946858048439026
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnPalpebInfe.R",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.8502244353294373,
+            0.5094215869903564,
+            -0.13199292123317719,
+            -0.013636432588100433
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.8502244353294373,
+            0.5094215869903564,
+            -0.13199292123317719,
+            -0.013636432588100433
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnOlhosMira",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.05454454571008682,
+            0.7050090432167053,
+            0.05454043298959732,
+            0.7049911618232727
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.05454454571008682,
+            0.7050090432167053,
+            0.05454043298959732,
+            0.7049911618232727
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnOlhosMira/BnOlhoMira.L",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.05646321922540665,
+            0.704832136631012,
+            0.7048647403717041,
+            0.056473296135663986
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.05646321922540665,
+            0.704832136631012,
+            0.7048647403717041,
+            0.056473296135663986
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnOlhosMira/BnOlhoMira.R",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.05648351088166237,
+            0.704833447933197,
+            0.7048631310462952,
+            -0.05645732209086418
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.05648351088166237,
+            0.704833447933197,
+            0.7048631310462952,
+            -0.05645732209086418
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.5733209848403931,
+            -0.4701753854751587,
+            -0.48225489258766174,
+            -0.4665493965148926
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.5733209848403931,
+            -0.4701753854751587,
+            -0.48225489258766174,
+            -0.4665493965148926
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L",
+      "keyframe_count": 8,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.589436948299408,
+            -0.19712819159030914,
+            0.030547333881258965,
+            0.7827971577644348
+          ]
+        },
+        {
+          "time": 0.5666667222976685,
+          "value": [
+            -0.5592342019081116,
+            -0.07823900878429413,
+            0.11910847574472427,
+            0.8166694045066833
+          ]
+        },
+        {
+          "time": 0.9333333969116211,
+          "value": [
+            -0.5406861901283264,
+            -0.02061743289232254,
+            0.19215328991413116,
+            0.8187249302864075
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L",
+      "keyframe_count": 12,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.011348828673362732,
+            0.010545865632593632,
+            0.035428520292043686,
+            0.9992521405220032
+          ]
+        },
+        {
+          "time": 0.23333334922790527,
+          "value": [
+            -0.009114290587604046,
+            -0.0014090921031311154,
+            0.17234405875205994,
+            0.9849936366081238
+          ]
+        },
+        {
+          "time": 0.46666669845581055,
+          "value": [
+            -0.001617498230189085,
+            -0.037982553243637085,
+            0.5466585755348206,
+            0.836492121219635
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.0001834715949371457,
+            2.703586869756691e-05,
+            -0.007962246425449848,
+            0.9999682903289795
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.0001834715949371457,
+            2.703586869756691e-05,
+            -0.007962246425449848,
+            0.9999682903289795
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.013316942378878593,
+            -0.013123185373842716,
+            -0.005726510658860207,
+            0.9998087882995605
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.013316942378878593,
+            -0.013123185373842716,
+            -0.005726510658860207,
+            0.9998087882995605
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L",
+      "keyframe_count": 6,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.008479072712361813,
+            0.008355861529707909,
+            -0.2236398607492447,
+            0.9745991826057434
+          ]
+        },
+        {
+          "time": 0.4333333671092987,
+          "value": [
+            -0.03145745396614075,
+            -0.018502097576856613,
+            -0.10572638362646103,
+            0.9937253594398499
+          ]
+        },
+        {
+          "time": 0.8666667342185974,
+          "value": [
+            -0.05394767224788666,
+            -0.04507286101579666,
+            0.013824314810335636,
+            0.9974302053451538
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L/BnDedo.1.L.006",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.0032667587511241436,
+            0.0019502616487443447,
+            0.004417148884385824,
+            0.999983012676239
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.0032667587511241436,
+            0.0019502616487443447,
+            0.004417148884385824,
+            0.999983012676239
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L/BnDedo.1.L.006/BnDedo.1.L.005",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.01722079887986183,
+            0.010735929012298584,
+            -0.0008211526437662542,
+            0.9997937679290771
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.01722079887986183,
+            0.010735929012298584,
+            -0.0008211526437662542,
+            0.9997937679290771
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.001",
+      "keyframe_count": 5,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.00852159783244133,
+            0.00839838944375515,
+            -0.10288073122501373,
+            0.994621753692627
+          ]
+        },
+        {
+          "time": 0.5666667222976685,
+          "value": [
+            -0.06582657247781754,
+            -0.03771376237273216,
+            -0.03466904163360596,
+            0.9965152144432068
+          ]
+        },
+        {
+          "time": 1.3333333730697632,
+          "value": [
+            -0.08574681729078293,
+            -0.0537794753909111,
+            -0.010688487440347672,
+            0.9948070645332336
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.001/BnDedo.1.L.008",
+      "keyframe_count": 5,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.0045733279548585415,
+            0.003725436283275485,
+            -0.0043028113432228565,
+            0.9999733567237854
+          ]
+        },
+        {
+          "time": 0.8000000715255737,
+          "value": [
+            0.07706926017999649,
+            0.054338473826646805,
+            0.010545453988015652,
+            0.9954880475997925
+          ]
+        },
+        {
+          "time": 1.533333420753479,
+          "value": [
+            0.07814706861972809,
+            0.05500616505742073,
+            0.010741687379777431,
+            0.9953652620315552
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.001/BnDedo.1.L.008/BnDedo.1.L.007",
+      "keyframe_count": 4,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.0035882233642041683,
+            0.002698807045817375,
+            0.0064608631655573845,
+            0.9999690651893616
+          ]
+        },
+        {
+          "time": 0.9000000357627869,
+          "value": [
+            0.04961302503943443,
+            0.036273129284381866,
+            0.016396207734942436,
+            0.9979749321937561
+          ]
+        },
+        {
+          "time": 2.0,
+          "value": [
+            0.023024113848805428,
+            0.01949586346745491,
+            0.011434333398938179,
+            0.9994794130325317
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.002",
+      "keyframe_count": 5,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.009115382097661495,
+            0.008982371538877487,
+            -0.018274692818522453,
+            0.999751091003418
+          ]
+        },
+        {
+          "time": 0.8000000715255737,
+          "value": [
+            -0.0830007791519165,
+            -0.047791656106710434,
+            -0.037342291325330734,
+            0.994702160358429
+          ]
+        },
+        {
+          "time": 1.533333420753479,
+          "value": [
+            -0.08397409319877625,
+            -0.04854419827461243,
+            -0.037562645971775055,
+            0.9945757389068604
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.002/BnDedo.1.L.010",
+      "keyframe_count": 5,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.006051057018339634,
+            0.005875785369426012,
+            -0.007199062034487724,
+            0.9999385476112366
+          ]
+        },
+        {
+          "time": 0.8000000715255737,
+          "value": [
+            0.0690351203083992,
+            0.0657520443201065,
+            0.00777458306401968,
+            0.995414674282074
+          ]
+        },
+        {
+          "time": 1.533333420753479,
+          "value": [
+            0.07002649456262589,
+            0.066541887819767,
+            0.00797264277935028,
+            0.9952913522720337
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.002/BnDedo.1.L.010/BnDedo.1.L.009",
+      "keyframe_count": 4,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.005453882273286581,
+            0.0048090312629938126,
+            0.010205114260315895,
+            0.9999215006828308
+          ]
+        },
+        {
+          "time": 0.9000000357627869,
+          "value": [
+            0.04342788830399513,
+            0.04427334666252136,
+            0.020655866712331772,
+            0.9978613257408142
+          ]
+        },
+        {
+          "time": 2.0,
+          "value": [
+            0.01899661310017109,
+            0.024553701281547546,
+            0.015439288690686226,
+            0.9993987679481506
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.003",
+      "keyframe_count": 6,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.10555196553468704,
+            0.020956769585609436,
+            0.0447707362473011,
+            0.9931843876838684
+          ]
+        },
+        {
+          "time": 0.5333333611488342,
+          "value": [
+            -0.1598769873380661,
+            -0.028019964694976807,
+            -0.027639195322990417,
+            0.9863520264625549
+          ]
+        },
+        {
+          "time": 1.033333420753479,
+          "value": [
+            -0.18415957689285278,
+            -0.05053598806262016,
+            -0.06094653159379959,
+            0.9797024726867676
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.003/BnDedo.1.L.012",
+      "keyframe_count": 4,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.08986879140138626,
+            -0.010212563909590244,
+            0.0033966959454119205,
+            0.9958954453468323
+          ]
+        },
+        {
+          "time": 0.9000000357627869,
+          "value": [
+            0.16504532098770142,
+            -0.009925940074026585,
+            0.004160494543612003,
+            0.98622727394104
+          ]
+        },
+        {
+          "time": 1.7000000476837158,
+          "value": [
+            0.15996906161308289,
+            -0.009947214275598526,
+            0.004109371453523636,
+            0.9870633482933044
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.003/BnDedo.1.L.012/BnDedo.1.L.011",
+      "keyframe_count": 4,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.0001519897487014532,
+            0.028375882655382156,
+            0.01445960346609354,
+            0.9994927644729614
+          ]
+        },
+        {
+          "time": 0.9333333969116211,
+          "value": [
+            0.049229010939598083,
+            0.02905561774969101,
+            0.013040008954703808,
+            0.9982796311378479
+          ]
+        },
+        {
+          "time": 2.0333335399627686,
+          "value": [
+            0.021659452468156815,
+            0.028684668242931366,
+            0.013836926780641079,
+            0.9992580413818359
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.004",
+      "keyframe_count": 7,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.33659765124320984,
+            0.7106636762619019,
+            0.20632369816303253,
+            0.5823140740394592
+          ]
+        },
+        {
+          "time": 0.40000003576278687,
+          "value": [
+            -0.229707732796669,
+            0.7306705117225647,
+            0.21122533082962036,
+            0.6072388291358948
+          ]
+        },
+        {
+          "time": 0.8333333730697632,
+          "value": [
+            -0.08932934701442719,
+            0.7424696683883667,
+            0.21301677823066711,
+            0.6287948489189148
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.004/BnDedo.1.L.014",
+      "keyframe_count": 5,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.03435113653540611,
+            -0.5097160339355469,
+            -0.1490325927734375,
+            0.8466397523880005
+          ]
+        },
+        {
+          "time": 0.8000000715255737,
+          "value": [
+            -0.008625215850770473,
+            -0.5322334170341492,
+            -0.22308993339538574,
+            0.8166297078132629
+          ]
+        },
+        {
+          "time": 1.533333420753479,
+          "value": [
+            -0.008827891200780869,
+            -0.5316174626350403,
+            -0.22440148890018463,
+            0.8166694045066833
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.004/BnDedo.1.L.014/BnDedo.1.L.013",
+      "keyframe_count": 4,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.01060030609369278,
+            -0.06804593652486801,
+            0.06388270109891891,
+            0.995578408241272
+          ]
+        },
+        {
+          "time": 0.9000000357627869,
+          "value": [
+            -0.02370469830930233,
+            -0.042940910905599594,
+            0.01656467467546463,
+            0.9986590147018433
+          ]
+        },
+        {
+          "time": 2.0,
+          "value": [
+            -0.006556302309036255,
+            -0.05548190698027611,
+            0.04024511203169823,
+            0.997626781463623
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.0644032210111618,
+            -0.0025586544070392847,
+            -0.7464054226875305,
+            0.6623629331588745
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.0644032210111618,
+            -0.0025586544070392847,
+            -0.7464054226875305,
+            0.6623629331588745
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R",
+      "keyframe_count": 8,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.3952008783817291,
+            -0.4141267240047455,
+            -0.43840035796165466,
+            0.6929073333740234
+          ]
+        },
+        {
+          "time": 0.5666667222976685,
+          "value": [
+            -0.3107631504535675,
+            -0.5221836566925049,
+            -0.4801083207130432,
+            0.6326504945755005
+          ]
+        },
+        {
+          "time": 0.9333333969116211,
+          "value": [
+            -0.24740493297576904,
+            -0.5641363263130188,
+            -0.517937958240509,
+            0.5935328602790833
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R",
+      "keyframe_count": 12,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.011349502019584179,
+            -0.010542353615164757,
+            -0.03542078658938408,
+            0.999252438545227
+          ]
+        },
+        {
+          "time": 0.23333334922790527,
+          "value": [
+            -0.009111082181334496,
+            0.0015380188124254346,
+            -0.17233753204345703,
+            0.9849945902824402
+          ]
+        },
+        {
+          "time": 0.46666669845581055,
+          "value": [
+            -0.0016064237570390105,
+            0.0383743979036808,
+            -0.5466452836990356,
+            0.8364830017089844
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.00021205870143603534,
+            2.899996900396218e-07,
+            0.007911131717264652,
+            0.9999687075614929
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.00021205870143603534,
+            2.899996900396218e-07,
+            0.007911131717264652,
+            0.9999687075614929
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.013296677730977535,
+            0.01309504546225071,
+            0.005762862507253885,
+            0.9998092651367188
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.013296677730977535,
+            0.01309504546225071,
+            0.005762862507253885,
+            0.9998092651367188
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R",
+      "keyframe_count": 6,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.008103239350020885,
+            -0.009820622391998768,
+            0.22362428903579712,
+            0.9745922684669495
+          ]
+        },
+        {
+          "time": 0.4333333671092987,
+          "value": [
+            -0.030909964814782143,
+            0.017093367874622345,
+            0.10569876432418823,
+            0.9937707185745239
+          ]
+        },
+        {
+          "time": 0.8666667342185974,
+          "value": [
+            -0.053236979991197586,
+            0.04374205693602562,
+            -0.013863611035048962,
+            0.9975270628929138
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R/BnDedo.1.R.006",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.0033013473730534315,
+            0.001245002611540258,
+            -0.004390537738800049,
+            0.9999841451644897
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.0033013473730534315,
+            0.001245002611540258,
+            -0.004390537738800049,
+            0.9999841451644897
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R/BnDedo.1.R.006/BnDedo.1.R.005",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.017219742760062218,
+            -0.014059931971132755,
+            0.0008223624899983406,
+            0.9997525215148926
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.017219742760062218,
+            -0.014059931971132755,
+            0.0008223624899983406,
+            0.9997525215148926
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.001",
+      "keyframe_count": 5,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.009377814829349518,
+            0.00019552899175323546,
+            0.10276757180690765,
+            0.9946612119674683
+          ]
+        },
+        {
+          "time": 0.5666667222976685,
+          "value": [
+            -0.06725185364484787,
+            0.046214938163757324,
+            0.03496280312538147,
+            0.9960516691207886
+          ]
+        },
+        {
+          "time": 1.3333333730697632,
+          "value": [
+            -0.08736804872751236,
+            0.06222794950008392,
+            0.011124152690172195,
+            0.9941684007644653
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.001/BnDedo.1.R.008",
+      "keyframe_count": 5,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.0046706655994057655,
+            -0.01051871944218874,
+            0.0043265135027468204,
+            0.9999244213104248
+          ]
+        },
+        {
+          "time": 0.8000000715255737,
+          "value": [
+            0.07707399129867554,
+            -0.061096660792827606,
+            -0.009963556192815304,
+            0.9951017498970032
+          ]
+        },
+        {
+          "time": 1.533333420753479,
+          "value": [
+            0.07815315574407578,
+            -0.061763498932123184,
+            -0.010152424685657024,
+            0.9949744939804077
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.001/BnDedo.1.R.008/BnDedo.1.R.007",
+      "keyframe_count": 4,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.003522980958223343,
+            -0.004518022760748863,
+            -0.00654126750305295,
+            0.9999622106552124
+          ]
+        },
+        {
+          "time": 0.9000000357627869,
+          "value": [
+            0.049693647772073746,
+            -0.03809206187725067,
+            -0.016381416469812393,
+            0.9979034066200256
+          ]
+        },
+        {
+          "time": 2.0,
+          "value": [
+            0.023097077384591103,
+            -0.021315868943929672,
+            -0.011467170901596546,
+            0.9994401931762695
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.002",
+      "keyframe_count": 5,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.009045762941241264,
+            -0.012268025428056717,
+            0.01828942261636257,
+            0.999716579914093
+          ]
+        },
+        {
+          "time": 0.8000000715255737,
+          "value": [
+            -0.08299661427736282,
+            0.04451640695333481,
+            0.037121377885341644,
+            0.9948627352714539
+          ]
+        },
+        {
+          "time": 1.533333420753479,
+          "value": [
+            -0.08397088944911957,
+            0.045269280672073364,
+            0.03733867034316063,
+            0.9947388768196106
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.002/BnDedo.1.R.010",
+      "keyframe_count": 5,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.006057285238057375,
+            0.0007476414320990443,
+            0.007216176018118858,
+            0.9999553561210632
+          ]
+        },
+        {
+          "time": 0.8000000715255737,
+          "value": [
+            0.06892696768045425,
+            -0.059159837663173676,
+            -0.008251087740063667,
+            0.9958319067955017
+          ]
+        },
+        {
+          "time": 1.533333420753479,
+          "value": [
+            0.0699169710278511,
+            -0.05995052307844162,
+            -0.008455689996480942,
+            0.9957138895988464
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.002/BnDedo.1.R.010/BnDedo.1.R.009",
+      "keyframe_count": 4,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.005446678958833218,
+            -0.011053770780563354,
+            -0.01020137034356594,
+            0.9998720288276672
+          ]
+        },
+        {
+          "time": 0.9000000357627869,
+          "value": [
+            0.04350100830197334,
+            -0.05050323158502579,
+            -0.02034452185034752,
+            0.997568666934967
+          ]
+        },
+        {
+          "time": 2.0,
+          "value": [
+            0.019036786630749702,
+            -0.030794180929660797,
+            -0.015281644649803638,
+            0.9992275834083557
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.003",
+      "keyframe_count": 6,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.10554488003253937,
+            -0.020953616127371788,
+            -0.04479003697633743,
+            0.9931843280792236
+          ]
+        },
+        {
+          "time": 0.5333333611488342,
+          "value": [
+            -0.1598690003156662,
+            0.028023643419146538,
+            0.027620449662208557,
+            0.9863537549972534
+          ]
+        },
+        {
+          "time": 1.033333420753479,
+          "value": [
+            -0.18415121734142303,
+            0.050539880990982056,
+            0.0609280951321125,
+            0.9797049760818481
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.003/BnDedo.1.R.012",
+      "keyframe_count": 4,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.0898553654551506,
+            0.011801600456237793,
+            -0.003210483817383647,
+            0.9958797097206116
+          ]
+        },
+        {
+          "time": 0.9000000357627869,
+          "value": [
+            0.16503076255321503,
+            0.01152451615780592,
+            -0.0040951804257929325,
+            0.9862126111984253
+          ]
+        },
+        {
+          "time": 1.7000000476837158,
+          "value": [
+            0.15995456278324127,
+            0.011545432731509209,
+            -0.004035833291709423,
+            0.9870486259460449
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.003/BnDedo.1.R.012/BnDedo.1.R.011",
+      "keyframe_count": 4,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.0003183872322551906,
+            -0.00104366650339216,
+            -0.007701284717768431,
+            0.9999697804450989
+          ]
+        },
+        {
+          "time": 0.9000000357627869,
+          "value": [
+            0.049285467714071274,
+            -0.030631370842456818,
+            -0.012981883250176907,
+            0.998230516910553
+          ]
+        },
+        {
+          "time": 2.0,
+          "value": [
+            0.024811802431941032,
+            -0.015844712033867836,
+            -0.010359062813222408,
+            0.9995129108428955
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.004",
+      "keyframe_count": 7,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.33660373091697693,
+            -0.7106552124023438,
+            -0.2063402384519577,
+            0.5823150277137756
+          ]
+        },
+        {
+          "time": 0.40000003576278687,
+          "value": [
+            -0.2297138273715973,
+            -0.7306637763977051,
+            -0.21124258637428284,
+            0.6072385311126709
+          ]
+        },
+        {
+          "time": 0.8333333730697632,
+          "value": [
+            -0.08933565765619278,
+            -0.7424651384353638,
+            -0.2130347341299057,
+            0.6287931799888611
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.004/BnDedo.1.R.014",
+      "keyframe_count": 5,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.03435824438929558,
+            0.509701669216156,
+            0.14904499053955078,
+            0.8466458916664124
+          ]
+        },
+        {
+          "time": 0.8000000715255737,
+          "value": [
+            -0.008619706146419048,
+            0.5322182774543762,
+            0.2231018841266632,
+            0.8166364431381226
+          ]
+        },
+        {
+          "time": 1.533333420753479,
+          "value": [
+            -0.008822289295494556,
+            0.5316022038459778,
+            0.22441336512565613,
+            0.816676139831543
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.004/BnDedo.1.R.014/BnDedo.1.R.013",
+      "keyframe_count": 4,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.010608047246932983,
+            0.06805305927991867,
+            -0.06387992203235626,
+            0.9955780506134033
+          ]
+        },
+        {
+          "time": 0.9000000357627869,
+          "value": [
+            -0.023696569725871086,
+            0.04294759780168533,
+            -0.016561849042773247,
+            0.9986589550971985
+          ]
+        },
+        {
+          "time": 2.0,
+          "value": [
+            -0.0065483208745718,
+            0.05548879876732826,
+            -0.04024229943752289,
+            0.997626543045044
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnBacia",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -1.1655837184321172e-08,
+            0.8559134006500244,
+            -0.5171191692352295,
+            -1.4853208085696679e-07
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -1.1655837184321172e-08,
+            0.8559134006500244,
+            -0.5171191692352295,
+            -1.4853208085696679e-07
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnBacia/BnBacia_L",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.4880106747150421,
+            -0.4758046865463257,
+            0.539336085319519,
+            -0.4945422410964966
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.4880106747150421,
+            -0.4758046865463257,
+            0.539336085319519,
+            -0.4945422410964966
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnBacia/BnBacia_L/BnPerna.L",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            -0.6080087423324585,
+            0.6166942715644836,
+            -0.2701214849948883,
+            0.42077064514160156
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            -0.6080087423324585,
+            0.6166942715644836,
+            -0.2701214849948883,
+            0.42077064514160156
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnBacia/BnBacia_R",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.530064582824707,
+            -0.5142745971679688,
+            0.4980655312538147,
+            0.4544050097465515
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.530064582824707,
+            -0.5142745971679688,
+            0.4980655312538147,
+            0.4544050097465515
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnBacia/BnBacia_R/BnPerna.R",
+      "keyframe_count": 2,
+      "keyframes": [
+        {
+          "time": 0.0,
+          "value": [
+            0.5753175616264343,
+            0.5931084752082825,
+            -0.33413970470428467,
+            -0.4534124433994293
+          ]
+        },
+        {
+          "time": 2.4666666984558105,
+          "value": [
+            0.5753175616264343,
+            0.5931084752082825,
+            -0.33413970470428467,
+            -0.4534124433994293
+          ]
+        }
+      ]
+    }
+  ],
+  "scale_curves": [
+    {
+      "path": "Armature.001",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnMaoOrient.R",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnPolyV.R",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/ik_FK.L",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/ik_FK.R",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnPolyV.L",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnMaoOrient.L",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnMandibula",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnMandibula/BnLingua",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnMandibula/BnLingua/BnLingua.003",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnMandibula/BnLingua/BnLingua.003/BnLingua.001",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnMandibula/BnLingua/BnLingua.003/BnLingua.001/BnLingua.002",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnSobrancCentro.L",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnSobrancCentro.R",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnSobrancLateral.L",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnSobrancLateral.R",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnPalpebSuper.L",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnPalpebInfe.L",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnOlho.L",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnOlho.R",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnSobrancCentro",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnLabioCentroSuper",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnBochecha.L",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnBochecha.R",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnLabioCentroInfer",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnBocaCanto.L",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnBocaCanto.R",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnDirigeQueixo",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnPalpebSuper.R",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnPalpebInfe.R",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnOlhosMira",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnOlhosMira/BnOlhoMira.L",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnPescoco/BnCabeca/BnOlhosMira/BnOlhoMira.R",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L/BnDedo.1.L.006",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L/BnDedo.1.L.006/BnDedo.1.L.005",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.001",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.001/BnDedo.1.L.008",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.001/BnDedo.1.L.008/BnDedo.1.L.007",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.002",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.002/BnDedo.1.L.010",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.002/BnDedo.1.L.010/BnDedo.1.L.009",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.003",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.003/BnDedo.1.L.012",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.003/BnDedo.1.L.012/BnDedo.1.L.011",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.004",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.004/BnDedo.1.L.014",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.L/BnBraco.L/BnAntBraco.L/BnAntBraco.L.001/BnMao.L/BnDedo.1.L.004/BnDedo.1.L.014/BnDedo.1.L.013",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R/BnDedo.1.R.006",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R/BnDedo.1.R.006/BnDedo.1.R.005",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.001",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.001/BnDedo.1.R.008",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.001/BnDedo.1.R.008/BnDedo.1.R.007",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.002",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.002/BnDedo.1.R.010",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.002/BnDedo.1.R.010/BnDedo.1.R.009",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.003",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.003/BnDedo.1.R.012",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.003/BnDedo.1.R.012/BnDedo.1.R.011",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.004",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.004/BnDedo.1.R.014",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnCol-01/BnCol-02/BnCol-03/BnOmbro.R/BnBraco.R/BnAntBraco.R/BnAntBraco.R.001/BnMao.R/BnDedo.1.R.004/BnDedo.1.R.014/BnDedo.1.R.013",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnBacia",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnBacia/BnBacia_L",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnBacia/BnBacia_L/BnPerna.L",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnBacia/BnBacia_R",
+      "keyframe_count": 2
+    },
+    {
+      "path": "Armature.001/BnBacia.001/BnBacia/BnBacia_R/BnPerna.R",
+      "keyframe_count": 2
+    }
+  ],
+  "float_curves": [
+    {
+      "path": "cabecaModifAlisson",
+      "attribute": "blendShape.Sorriso"
+    },
+    {
+      "path": "cabecaModifAlisson",
+      "attribute": "blendShape.SobrancelhaDirRaiva"
+    },
+    {
+      "path": "cabecaModifAlisson",
+      "attribute": "blendShape.SobrancelhaEsqRaiva"
+    },
+    {
+      "path": "cabecaModifAlisson",
+      "attribute": "blendShape.SobrancelhaEsqAberta"
+    },
+    {
+      "path": "cabecaModifAlisson",
+      "attribute": "blendShape.SobrancelhaDirAberta"
+    },
+    {
+      "path": "cabecaModifAlisson",
+      "attribute": "blendShape.BaixaSobrancelhaDir"
+    },
+    {
+      "path": "cabecaModifAlisson",
+      "attribute": "blendShape.BaixaSobrancelhaEsq"
+    },
+    {
+      "path": "cabecaModifAlisson",
+      "attribute": "blendShape.LabioSuperior"
+    },
+    {
+      "path": "cabecaModifAlisson",
+      "attribute": "blendShape.BaixaCantoBoca"
+    },
+    {
+      "path": "cabecaModifAlisson",
+      "attribute": "blendShape.InflaBochecha"
+    },
+    {
+      "path": "cabecaModifAlisson",
+      "attribute": "blendShape.Bico"
+    },
+    {
+      "path": "cabecaModifAlisson",
+      "attribute": "blendShape.BochechaContraida"
+    },
+    {
+      "path": "cabecaModifAlisson",
+      "attribute": "blendShape.LevantaSobrancelhaDir"
+    },
+    {
+      "path": "cabecaModifAlisson",
+      "attribute": "blendShape.LevantaSobrancelhaEsq"
+    },
+    {
+      "path": "cabecaModifAlisson",
+      "attribute": "blendShape.BochechaInfladaEsq"
+    },
+    {
+      "path": "cabecaModifAlisson",
+      "attribute": "blendShape.BochechaInfladaDir"
+    },
+    {
+      "path": "cabecaModifAlisson",
+      "attribute": "blendShape.correcaoAbreBoca"
+    },
+    {
+      "path": "cabecaModifAlisson",
+      "attribute": "blendShape.LabioContraido"
+    },
+    {
+      "path": "cabecaModifAlisson",
+      "attribute": "blendShape.FranzirSobrancelha"
+    },
+    {
+      "path": "cabecaModifAlisson",
+      "attribute": "blendShape.baixaBocaCanto_esq"
+    },
+    {
+      "path": "cabecaModifAlisson",
+      "attribute": "blendShape.baixaBocaCanto_dir"
+    },
+    {
+      "path": "cabecaModifAlisson",
+      "attribute": "blendShape.TESTE"
+    }
+  ]
+}

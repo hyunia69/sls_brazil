@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VLibras Sign Language Player</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #1a1a2e; color: #eee; font-family: 'Segoe UI', monospace; overflow: hidden; }
+        #viewport { width: 100vw; height: 100vh; }
+
+        /* Left Panel - Controls */
+        #panel {
+            position: fixed; top: 10px; left: 10px;
+            background: rgba(0,0,0,0.88); padding: 16px; border-radius: 10px;
+            min-width: 260px; max-width: 300px; z-index: 10; border: 1px solid #333;
+            max-height: calc(100vh - 20px); overflow-y: auto;
+            font-size: 12px;
+        }
+        #panel h2 { color: #4fc3f7; margin-bottom: 10px; font-size: 15px; }
+        #panel h3 { color: #81c784; margin: 10px 0 6px; font-size: 12px; }
+
+        .btn-row { display: flex; gap: 4px; flex-wrap: wrap; margin: 4px 0; }
+        .btn {
+            padding: 5px 12px; background: #16213e; border: 1px solid #0f3460;
+            border-radius: 5px; color: #eee; cursor: pointer; font-size: 11px;
+            transition: all 0.15s;
+        }
+        .btn:hover { background: #1a3a6e; }
+        .btn.active { background: #0f3460; border-color: #4fc3f7; color: #4fc3f7; }
+        .btn.play { background: #1b5e20; border-color: #4caf50; }
+        .btn.play:hover { background: #2e7d32; }
+        .btn.stop { background: #b71c1c; border-color: #f44336; }
+        .btn.stop:hover { background: #c62828; }
+
+        select, input[type="range"], input[type="file"] {
+            width: 100%; background: #16213e; border: 1px solid #333;
+            color: #eee; padding: 4px; border-radius: 4px; font-size: 11px;
+        }
+        label { display: flex; align-items: center; gap: 6px; margin: 3px 0; font-size: 11px; }
+        label input[type="checkbox"] { accent-color: #4fc3f7; }
+
+        .slider-row { display: flex; align-items: center; gap: 8px; margin: 4px 0; }
+        .slider-row span { min-width: 35px; text-align: right; color: #aaa; }
+
+        /* Right Panel - Info */
+        #info-panel {
+            position: fixed; top: 10px; right: 10px;
+            background: rgba(0,0,0,0.88); padding: 12px; border-radius: 10px;
+            min-width: 240px; z-index: 10; border: 1px solid #333; font-size: 11px;
+            max-height: calc(100vh - 20px); overflow-y: auto;
+        }
+        #info-panel h3 { color: #ffb74d; margin-bottom: 6px; font-size: 12px; }
+        .info-row { display: flex; justify-content: space-between; margin: 2px 0; }
+        .info-label { color: #888; }
+        .info-value { color: #eee; font-family: monospace; }
+
+        /* Bottom Status */
+        #status-bar {
+            position: fixed; bottom: 10px; left: 50%; transform: translateX(-50%);
+            background: rgba(0,0,0,0.85); padding: 8px 20px; border-radius: 8px;
+            z-index: 10; font-size: 12px; color: #aaa; text-align: center;
+            max-width: 80vw;
+        }
+
+        /* Timeline */
+        #timeline-container {
+            position: fixed; bottom: 50px; left: 50%; transform: translateX(-50%);
+            background: rgba(0,0,0,0.85); padding: 8px 16px; border-radius: 8px;
+            z-index: 10; width: 60vw; min-width: 400px;
+        }
+        #timeline {
+            width: 100%; height: 6px; appearance: none; background: #333;
+            border-radius: 3px; cursor: pointer;
+        }
+        #timeline::-webkit-slider-thumb {
+            appearance: none; width: 14px; height: 14px; background: #4fc3f7;
+            border-radius: 50%; cursor: pointer;
+        }
+        #timeline-info {
+            display: flex; justify-content: space-between; font-size: 11px;
+            color: #aaa; margin-top: 4px;
+        }
+
+        /* Debug Console */
+        #debug-console {
+            position: fixed; bottom: 100px; right: 10px;
+            background: rgba(0,0,0,0.9); padding: 10px; border-radius: 8px;
+            width: 350px; max-height: 300px; overflow-y: auto; z-index: 10;
+            border: 1px solid #333; font-size: 10px; font-family: monospace;
+            display: none;
+        }
+        #debug-console.visible { display: block; }
+        .debug-line { margin: 1px 0; color: #aaa; }
+        .debug-line.warn { color: #ffb74d; }
+        .debug-line.error { color: #f44336; }
+        .debug-line.success { color: #81c784; }
+    </style>
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.162.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.162.0/examples/jsm/"
+        }
+    }
+    </script>
+</head>
+<body>
+    <div id="viewport"></div>
+
+    <!-- Left Panel -->
+    <div id="panel">
+        <h2>VLibras Player</h2>
+
+        <h3>Avatar</h3>
+        <div class="btn-row" id="avatar-buttons">
+            <button class="btn active" data-avatar="icaro">Icaro</button>
+            <button class="btn" data-avatar="hozana">Hozana</button>
+            <button class="btn" data-avatar="guga">Guga</button>
+        </div>
+
+        <h3>Animation</h3>
+        <div class="btn-row">
+            <button class="btn play" id="btn-play">&#9654; Play</button>
+            <button class="btn" id="btn-pause">&#10074;&#10074; Pause</button>
+            <button class="btn stop" id="btn-stop">&#9632; Stop</button>
+        </div>
+
+        <h3>Speed</h3>
+        <div class="slider-row">
+            <input type="range" id="speed-slider" min="0.1" max="3" step="0.1" value="1">
+            <span id="speed-display">1.0x</span>
+        </div>
+
+        <h3>Coordinate Conversion</h3>
+        <select id="conv-select">
+            <option value="yz-negate" selected>★ YZ-negate [x, -y, -z, w]</option>
+            <option value="identity">Identity [x, y, z, w]</option>
+            <option value="z-flip">Z-flip [-x, -y, z, w]</option>
+            <option value="w-norm-z-flip">W-norm + Z-flip</option>
+            <option value="z-negate">Z-negate [x, y, -z, w]</option>
+        </select>
+
+        <h3>Display</h3>
+        <label><input type="checkbox" id="chk-skeleton"> Skeleton</label>
+        <label><input type="checkbox" checked id="chk-mesh"> Mesh</label>
+        <label><input type="checkbox" id="chk-wireframe"> Wireframe</label>
+        <label><input type="checkbox" checked id="chk-grid"> Grid</label>
+        <label><input type="checkbox" checked id="chk-rotate"> Auto Rotate</label>
+
+        <h3>Bind Pose</h3>
+        <label><input type="checkbox" id="chk-calibrate"> Calibrate bind pose (calculateInverses)</label>
+        <label><input type="checkbox" id="chk-strip-prerot"> Strip preRotation</label>
+
+        <h3>Track Filters</h3>
+        <label><input type="checkbox" checked id="chk-use-rotation"> Rotation tracks</label>
+        <label><input type="checkbox" id="chk-use-position"> Position tracks</label>
+        <label><input type="checkbox" id="chk-use-scale"> Scale tracks</label>
+
+        <h3>Animation Data</h3>
+        <input type="file" id="anim-file" accept=".json">
+        <div style="color:#666;margin-top:4px;">Or drop JSON file here</div>
+
+        <h3>Debug</h3>
+        <label><input type="checkbox" id="chk-debug"> Show debug console</label>
+        <button class="btn" id="btn-log-bones" style="margin-top:4px;">Log Bones</button>
+        <button class="btn" id="btn-log-compare">Compare Rest vs Anim</button>
+    </div>
+
+    <!-- Right Panel -->
+    <div id="info-panel">
+        <h3>Model Info</h3>
+        <div id="model-info">Loading...</div>
+        <h3 style="margin-top:10px;">Animation Info</h3>
+        <div id="anim-info">No animation loaded</div>
+    </div>
+
+    <!-- Timeline -->
+    <div id="timeline-container">
+        <input type="range" id="timeline" min="0" max="100" step="0.1" value="0">
+        <div id="timeline-info">
+            <span id="time-current">0.00s</span>
+            <span id="time-frame">Frame 0</span>
+            <span id="time-total">/ 0.00s</span>
+        </div>
+    </div>
+
+    <!-- Status -->
+    <div id="status-bar">Ready - Load an avatar</div>
+
+    <!-- Debug Console -->
+    <div id="debug-console">
+        <div style="color:#4fc3f7;margin-bottom:4px;">Debug Console</div>
+    </div>
+
+    <script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { FBXLoader } from 'three/addons/loaders/FBXLoader.js';
+
+// ─── Avatar Definitions ───
+const AVATARS = {
+    icaro: {
+        name: 'Icaro',
+        fbx: '../avatars/vlibras/icaro/Icaro_NovoEstilo.fbx',
+        textures: {
+            'PeleTex': '../avatars/vlibras/icaro/Textures/PeleTex.png',
+            'cabelo': '../avatars/vlibras/icaro/Textures/cabelo.png',
+            'Camisa': '../avatars/vlibras/icaro/Textures/Camisa.png',
+            'camisaestampa': '../avatars/vlibras/icaro/Textures/camisaestampa.png',
+            'calca': '../avatars/vlibras/icaro/Textures/calca.png',
+            'olhoTex': '../avatars/vlibras/icaro/Textures/olhoTex.png',
+        }
+    },
+    hozana: {
+        name: 'Hozana',
+        fbx: '../avatars/vlibras/hozana/Hozana2.0.fbx',
+        textures: {
+            'H_PeleTex': '../avatars/vlibras/hozana/Textures/H_PeleTex.png',
+            'HozcabeloTex': '../avatars/vlibras/hozana/Textures/HozcabeloTex.png',
+            'camisaTex': '../avatars/vlibras/hozana/Textures/camisaTex.png',
+            'camisaestampa': '../avatars/vlibras/hozana/Textures/camisaestampa.png',
+            'CalcaTex': '../avatars/vlibras/hozana/Textures/CalcaTex.png',
+            'olhoTex': '../avatars/vlibras/hozana/Textures/olhoTex.png',
+        }
+    },
+    guga: {
+        name: 'Guga',
+        fbx: '../avatars/vlibras/guga/GuGa.fbx',
+        textures: {
+            'peleTex': '../avatars/vlibras/guga/Textures/peleTex.png',
+            'cabeloTex': '../avatars/vlibras/guga/Textures/cabeloTex.png',
+            'camisaTex': '../avatars/vlibras/guga/Textures/camisaTex.png',
+            'camisaestampa': '../avatars/vlibras/guga/Textures/camisaestampa.png',
+            'calcaTex': '../avatars/vlibras/guga/Textures/calcaTex.png',
+            'olhoTex': '../avatars/vlibras/guga/Textures/olhoTex.png',
+        }
+    }
+};
+
+// Auxiliary bones to skip (IK/FK controllers)
+const AUX_PREFIXES = ['BnMaoOrient', 'BnPolyV', 'ik_FK'];
+
+// Normalize bone name: FBXLoader strips dots from names
+// Animation: "BnBacia.001" → FBX: "BnBacia001"
+// Animation: "BnMaoOrient.L" → FBX: "BnMaoOrientL"
+function normalizeBoneName(name) {
+    return name.replace(/\./g, '');
+}
+
+// Build a mapping from normalized animation bone names to FBX bone names
+let animToFbxMap = {};  // normalizedAnimName → fbxBoneName
+
+function buildAnimToFbxMap() {
+    animToFbxMap = {};
+    // FBX bones are already dot-stripped by FBXLoader
+    for (const fbxName of Object.keys(boneMap)) {
+        // FBX name IS the normalized name
+        animToFbxMap[fbxName] = fbxName;
+    }
+}
+
+// Resolve animation path to FBX bone name
+function resolveAnimBone(animPath) {
+    const leafRaw = animPath.includes('/') ? animPath.split('/').pop() : animPath;
+    const normalized = normalizeBoneName(leafRaw);
+    return animToFbxMap[normalized] || null;
+}
+
+// Quaternion conversion functions
+// FBXLoader applies coordinate conversion that negates Y,Z of bone quaternions
+// relative to Unity's animation data. The correct conversion is [x, -y, -z, w].
+const CONVERSIONS = {
+    'yz-negate':      ([x, y, z, w]) => [x, -y, -z, w],  // ★ CORRECT for FBX
+    'identity':       ([x, y, z, w]) => [x, y, z, w],
+    'z-flip':         ([x, y, z, w]) => [-x, -y, z, w],
+    'w-norm-z-flip':  ([x, y, z, w]) => {
+        if (w < 0) { x = -x; y = -y; z = -z; w = -w; }
+        return [-x, -y, z, w];
+    },
+    'z-negate':       ([x, y, z, w]) => [x, y, -z, w],
+};
+
+// ─── Scene Setup ───
+const container = document.getElementById('viewport');
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x1a1a2e);
+
+const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 2000);
+camera.position.set(0, 100, 300);
+
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+renderer.shadowMap.enabled = true;
+container.appendChild(renderer.domElement);
+
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.target.set(0, 80, 0);
+controls.enableDamping = true;
+controls.autoRotate = true;
+controls.autoRotateSpeed = 1.0;
+controls.update();
+
+// Lights
+scene.add(new THREE.AmbientLight(0x404060, 0.8));
+const dirLight = new THREE.DirectionalLight(0xffffff, 1.0);
+dirLight.position.set(100, 200, 150);
+scene.add(dirLight);
+scene.add(new THREE.DirectionalLight(0x6688cc, 0.4).translateX(-100).translateY(100).translateZ(-100));
+scene.add(new THREE.DirectionalLight(0xcc8866, 0.3).translateY(50).translateZ(-150));
+
+// Grid & Axes
+const grid = new THREE.GridHelper(400, 20, 0x333355, 0x222244);
+scene.add(grid);
+const axes = new THREE.AxesHelper(50);
+scene.add(axes);
+
+// ─── State ───
+let currentModel = null;
+let skeletonHelper = null;
+let currentAvatarKey = null;
+let boneMap = {};          // boneName → THREE.Bone (first instance)
+let mixer = null;
+let currentAction = null;
+let animData = null;       // loaded JSON animation data
+let clipDuration = 0;
+let isPlaying = false;
+let clock = new THREE.Clock();
+let currentTime = 0;       // manual animation time
+let animTracks = [];       // pre-built animation tracks for manual playback
+
+// Expose for debug console
+window._dbg = {
+    get boneMap() { return boneMap; },
+    get animData() { return animData; },
+    get model() { return currentModel; },
+    get camera() { return camera; },
+    get controls() { return controls; },
+    get primaryBones() { return primaryBones; },
+};
+
+const fbxLoader = new FBXLoader();
+const textureLoader = new THREE.TextureLoader();
+
+// ─── Debug Logger ───
+function debugLog(msg, type = '') {
+    const console_ = document.getElementById('debug-console');
+    const line = document.createElement('div');
+    line.className = 'debug-line' + (type ? ' ' + type : '');
+    line.textContent = `[${new Date().toLocaleTimeString()}] ${msg}`;
+    console_.appendChild(line);
+    console_.scrollTop = console_.scrollHeight;
+    if (type === 'error') console.error(msg);
+    else console.log(msg);
+}
+
+function setStatus(msg) {
+    document.getElementById('status-bar').textContent = msg;
+}
+
+// ─── Build Bone Map ───
+// FBXLoader creates NESTED bone chains for multi-mesh FBX: each skeleton's
+// "BnBracoL" is a CHILD of the previous skeleton's "BnBracoL".
+// We must only animate the INNERMOST bone (directly parented to the correct
+// armature bone) and set all outer copies to identity to avoid compounding rotations.
+
+let allBonesMap = {};  // boneName → [Bone, ...] - innermost first, then passthrough copies
+let skeletonList = [];
+let primaryBones = {}; // boneName → Bone (the innermost one to animate)
+let passthroughBones = {}; // boneName → [Bone, ...] (outer copies to keep at identity)
+
+function buildBoneMap(model) {
+    boneMap = {};
+    allBonesMap = {};
+    skeletonList = [];
+    primaryBones = {};
+    passthroughBones = {};
+
+    // Collect all skeletons
+    const seenSkeletons = new Set();
+    model.traverse(obj => {
+        if (obj.isSkinnedMesh && obj.skeleton) {
+            const skelId = obj.skeleton.uuid;
+            if (!seenSkeletons.has(skelId)) {
+                seenSkeletons.add(skelId);
+                skeletonList.push(obj.skeleton);
+            }
+        }
+    });
+
+    // For each bone name, find ALL instances and determine the innermost one
+    // (the one whose parent has a DIFFERENT name = correct armature parent)
+    const bonesByName = {};
+    model.traverse(obj => {
+        if (obj.isBone && obj.name) {
+            if (!bonesByName[obj.name]) bonesByName[obj.name] = [];
+            bonesByName[obj.name].push(obj);
+        }
+    });
+
+    for (const [name, bones] of Object.entries(bonesByName)) {
+        // The innermost bone is the one whose parent has a DIFFERENT name
+        // (i.e., it's parented to the correct armature bone, not another copy of itself)
+        const innermost = bones.find(b => b.parent && b.parent.name !== name);
+        if (innermost) {
+            primaryBones[name] = innermost;
+            boneMap[name] = innermost;
+            passthroughBones[name] = bones.filter(b => b !== innermost);
+        } else {
+            // Fallback: use the first one
+            primaryBones[name] = bones[0];
+            boneMap[name] = bones[0];
+            passthroughBones[name] = bones.slice(1);
+        }
+        allBonesMap[name] = bones;
+    }
+
+    buildAnimToFbxMap();
+
+    const passthroughCount = Object.values(passthroughBones).reduce((s, arr) => s + arr.length, 0);
+    debugLog(`Bone map: ${Object.keys(primaryBones).length} primary bones, ${passthroughCount} passthrough copies, ${skeletonList.length} skeletons`, 'success');
+    return boneMap;
+}
+
+// ─── Avatar Loading ───
+async function loadAvatar(avatarKey) {
+    if (currentAvatarKey === avatarKey && currentModel) return;
+    currentAvatarKey = avatarKey;
+
+    const avatar = AVATARS[avatarKey];
+    setStatus(`Loading ${avatar.name}...`);
+    debugLog(`Loading avatar: ${avatar.name}`);
+
+    // Cleanup previous
+    if (mixer) { mixer.stopAllAction(); mixer = null; }
+    currentAction = null;
+    isPlaying = false;
+    if (currentModel) { scene.remove(currentModel); currentModel = null; }
+    if (skeletonHelper) { scene.remove(skeletonHelper); skeletonHelper = null; }
+
+    try {
+        const model = await new Promise((resolve, reject) => {
+            fbxLoader.load(avatar.fbx, resolve,
+                (xhr) => { if (xhr.total) setStatus(`Loading ${avatar.name}... ${Math.round(xhr.loaded/xhr.total*100)}%`); },
+                reject
+            );
+        });
+
+        currentModel = model;
+        scene.add(model);
+
+        // Build bone map
+        buildBoneMap(model);
+
+        // Setup SkinnedMesh properties
+        model.traverse(obj => {
+            if (obj.isSkinnedMesh) {
+                obj.frustumCulled = false;
+            }
+        });
+
+        // Create skeleton helper
+        skeletonHelper = new THREE.SkeletonHelper(model);
+        skeletonHelper.visible = document.getElementById('chk-skeleton').checked;
+        scene.add(skeletonHelper);
+
+        // Auto-frame camera
+        const box = new THREE.Box3().setFromObject(model);
+        const center = box.getCenter(new THREE.Vector3());
+        const size = box.getSize(new THREE.Vector3());
+        const maxDim = Math.max(size.x, size.y, size.z);
+
+        camera.far = maxDim * 10;
+        camera.near = maxDim * 0.001;
+        camera.updateProjectionMatrix();
+        controls.target.copy(center);
+        camera.position.set(center.x + maxDim * 0.3, center.y, center.z + maxDim * 1.5);
+        controls.update();
+
+        // Show model info
+        showModelInfo(model, avatarKey);
+
+        // Log bone details for debugging
+        debugLog(`FBX bones: ${Object.keys(boneMap).join(', ').substring(0, 200)}...`);
+
+        // Check for preRotation
+        let preRotCount = 0;
+        model.traverse(bone => {
+            if (bone.isBone && bone.userData.preRotation) {
+                preRotCount++;
+            }
+        });
+        if (preRotCount > 0) {
+            debugLog(`${preRotCount} bones have preRotation data`, 'warn');
+        }
+
+        // If animation data is loaded, apply it
+        if (animData) {
+            applyAnimation();
+        }
+
+        setStatus(`${avatar.name} loaded - ${Object.keys(boneMap).length} bones`);
+        debugLog(`Avatar loaded: ${avatar.name}`, 'success');
+
+        // Update button states
+        document.querySelectorAll('#avatar-buttons .btn').forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.avatar === avatarKey);
+        });
+
+    } catch (err) {
+        setStatus(`Error loading ${avatar.name}: ${err.message}`);
+        debugLog(`Load error: ${err.message}`, 'error');
+    }
+}
+
+// ─── Model Info Display ───
+function showModelInfo(model, avatarKey) {
+    let meshCount = 0, vertexCount = 0, boneCount = 0;
+    model.traverse(obj => {
+        if (obj.isMesh) { meshCount++; vertexCount += obj.geometry.attributes.position?.count || 0; }
+        if (obj.isBone) boneCount++;
+    });
+
+    document.getElementById('model-info').innerHTML = `
+        <div class="info-row"><span class="info-label">Avatar:</span><span class="info-value">${AVATARS[avatarKey].name}</span></div>
+        <div class="info-row"><span class="info-label">Meshes:</span><span class="info-value">${meshCount}</span></div>
+        <div class="info-row"><span class="info-label">Vertices:</span><span class="info-value">${vertexCount.toLocaleString()}</span></div>
+        <div class="info-row"><span class="info-label">Bones:</span><span class="info-value">${boneCount}</span></div>
+    `;
+}
+
+// ─── Animation Loading ───
+async function loadAnimationJSON(source) {
+    let data;
+    if (typeof source === 'string') {
+        const resp = await fetch(source);
+        data = await resp.json();
+    } else {
+        data = source;
+    }
+
+    animData = data;
+
+    // Compute duration
+    clipDuration = 0;
+    for (const curves of [data.rotation_curves || [], data.position_curves || [], data.scale_curves || []]) {
+        for (const curve of curves) {
+            for (const kf of (curve.keyframes || [])) {
+                if (kf.time > clipDuration) clipDuration = kf.time;
+            }
+        }
+    }
+
+    // Show animation info
+    const rotCount = (data.rotation_curves || []).length;
+    const posCount = (data.position_curves || []).length;
+    const scaleCount = (data.scale_curves || []).length;
+    const floatCount = (data.float_curves || []).length;
+    const bonePaths = data.bone_paths || [];
+
+    document.getElementById('anim-info').innerHTML = `
+        <div class="info-row"><span class="info-label">Name:</span><span class="info-value">${data.name || 'unknown'}</span></div>
+        <div class="info-row"><span class="info-label">FPS:</span><span class="info-value">${data.sample_rate || 30}</span></div>
+        <div class="info-row"><span class="info-label">Duration:</span><span class="info-value">${clipDuration.toFixed(3)}s</span></div>
+        <div class="info-row"><span class="info-label">Bones:</span><span class="info-value">${bonePaths.length}</span></div>
+        <div class="info-row"><span class="info-label">Rotation:</span><span class="info-value">${rotCount} curves</span></div>
+        <div class="info-row"><span class="info-label">Position:</span><span class="info-value">${posCount} curves</span></div>
+        <div class="info-row"><span class="info-label">Scale:</span><span class="info-value">${scaleCount} curves</span></div>
+        <div class="info-row"><span class="info-label">Float:</span><span class="info-value">${floatCount} curves</span></div>
+    `;
+
+    // Update timeline
+    document.getElementById('timeline').max = clipDuration;
+    document.getElementById('time-total').textContent = `/ ${clipDuration.toFixed(2)}s`;
+
+    debugLog(`Animation loaded: ${data.name}, ${clipDuration.toFixed(2)}s, ${bonePaths.length} bones`, 'success');
+
+    // Match bone names (with dot-normalization)
+    if (currentModel) {
+        const animBoneNames = bonePaths.map(p => p.split('/').pop());
+        let matchCount = 0, unmatchedList = [];
+        for (const rawName of animBoneNames) {
+            if (AUX_PREFIXES.some(p => rawName.startsWith(p))) continue;
+            const normalized = normalizeBoneName(rawName);
+            if (boneMap[normalized]) {
+                matchCount++;
+            } else {
+                unmatchedList.push(`${rawName}→${normalized}`);
+            }
+        }
+        debugLog(`Bone matching: ${matchCount} matched, ${unmatchedList.length} unmatched (after dot-normalization)`);
+        if (unmatchedList.length > 0) {
+            debugLog(`Unmatched: ${unmatchedList.join(', ')}`, 'warn');
+        }
+
+        applyAnimation();
+    }
+
+    setStatus(`Animation "${data.name}" loaded (${clipDuration.toFixed(2)}s)`);
+}
+
+// ─── Get leaf bone name from path ───
+function leafName(path) {
+    return path.includes('/') ? path.split('/').pop() : path;
+}
+
+// ─── Get current conversion function ───
+function getConvFn() {
+    const key = document.getElementById('conv-select').value;
+    return CONVERSIONS[key];
+}
+
+// ─── Quaternion SLERP helper ───
+function slerpKeyframes(keyframes, time, convFn) {
+    if (keyframes.length === 0) return null;
+    if (keyframes.length === 1 || time <= keyframes[0].time) return convFn(keyframes[0].value);
+    if (time >= keyframes[keyframes.length - 1].time) return convFn(keyframes[keyframes.length - 1].value);
+
+    // Find the two keyframes to interpolate between
+    let i = 0;
+    while (i < keyframes.length - 1 && keyframes[i + 1].time <= time) i++;
+
+    const kf0 = keyframes[i];
+    const kf1 = keyframes[i + 1];
+    const t = (time - kf0.time) / (kf1.time - kf0.time);
+
+    const [ax, ay, az, aw] = convFn(kf0.value);
+    const [bx, by, bz, bw] = convFn(kf1.value);
+
+    // SLERP
+    const qa = new THREE.Quaternion(ax, ay, az, aw);
+    const qb = new THREE.Quaternion(bx, by, bz, bw);
+    qa.slerp(qb, t);
+    return [qa.x, qa.y, qa.z, qa.w];
+}
+
+function lerpKeyframes(keyframes, time) {
+    if (keyframes.length === 0) return null;
+    if (keyframes.length === 1 || time <= keyframes[0].time) return keyframes[0].value;
+    if (time >= keyframes[keyframes.length - 1].time) return keyframes[keyframes.length - 1].value;
+
+    let i = 0;
+    while (i < keyframes.length - 1 && keyframes[i + 1].time <= time) i++;
+
+    const kf0 = keyframes[i];
+    const kf1 = keyframes[i + 1];
+    const t = (time - kf0.time) / (kf1.time - kf0.time);
+
+    return kf0.value.map((v, j) => v + (kf1.value[j] - v) * t);
+}
+
+// ─── Apply Animation to Avatar (Manual approach - handles multi-skeleton FBX) ───
+function applyAnimation() {
+    if (!currentModel || !animData) return;
+
+    const convFn = getConvFn();
+    const doCalibrate = document.getElementById('chk-calibrate').checked;
+    const useRotation = document.getElementById('chk-use-rotation').checked;
+    const usePosition = document.getElementById('chk-use-position').checked;
+    const useScale = document.getElementById('chk-use-scale').checked;
+
+    isPlaying = false;
+    currentTime = 0;
+    animTracks = [];
+
+    debugLog(`Applying animation with conversion: ${document.getElementById('conv-select').value}`);
+    debugLog(`Calibrate: ${doCalibrate}, Tracks: rot=${useRotation} pos=${usePosition} scale=${useScale}`);
+
+    // NOTE: Do NOT set passthrough bones to identity and do NOT recalculate inverses.
+    // FBXLoader creates nested bone chains (primary → passthrough1 → passthrough2 ...).
+    // Each skeleton's bind inverses were computed from the original nested values.
+    // The compounding (Q_rest^N) cancels out in the skinning equation:
+    //   delta = bone.world × inverse(bone.bind_world)
+    // Both primary and passthrough produce the same delta, so only the primary
+    // needs to be animated. Passthrough bones stay at FBX rest values.
+    debugLog(`Primary bones: ${Object.keys(primaryBones).length}, passthrough: ${Object.values(passthroughBones).reduce((s,a)=>s+a.length,0)} (untouched)`);
+
+    // Step 2: Calibrate bind pose - apply frame 0 to PRIMARY bones only
+    if (doCalibrate) {
+        debugLog('Calibrating bind pose with frame-0 (primary bones only)...');
+
+        for (const rc of (animData.rotation_curves || [])) {
+            const rawLeaf = leafName(rc.path);
+            if (AUX_PREFIXES.some(p => rawLeaf.startsWith(p))) continue;
+            const fbxName = resolveAnimBone(rc.path);
+            const bone = fbxName ? primaryBones[fbxName] : null;
+            if (!bone || !rc.keyframes || rc.keyframes.length === 0) continue;
+
+            const kf0 = rc.keyframes[0];
+            const [qx, qy, qz, qw] = convFn(kf0.value);
+            bone.quaternion.set(qx, qy, qz, qw);
+        }
+
+        if (usePosition) {
+            for (const pc of (animData.position_curves || [])) {
+                const rawLeaf = leafName(pc.path);
+                if (AUX_PREFIXES.some(p => rawLeaf.startsWith(p))) continue;
+                const fbxName = resolveAnimBone(pc.path);
+                const bone = fbxName ? primaryBones[fbxName] : null;
+                if (!bone || !pc.keyframes || pc.keyframes.length === 0) continue;
+
+                const kf0 = pc.keyframes[0];
+                bone.position.set(kf0.value[0], kf0.value[1], kf0.value[2]);
+            }
+        }
+
+        currentModel.updateMatrixWorld(true);
+
+        currentModel.traverse(obj => {
+            if (obj.isSkinnedMesh && obj.skeleton) {
+                obj.skeleton.calculateInverses();
+                debugLog(`Recalculated inverses for ${obj.name} (${obj.skeleton.bones.length} bones)`, 'success');
+            }
+        });
+    }
+
+    // Step 3: Pre-build animation tracks targeting PRIMARY bones only
+    if (useRotation) {
+        for (const rc of (animData.rotation_curves || [])) {
+            const rawLeaf = leafName(rc.path);
+            if (AUX_PREFIXES.some(p => rawLeaf.startsWith(p))) continue;
+            const fbxName = resolveAnimBone(rc.path);
+            const bone = fbxName ? primaryBones[fbxName] : null;
+            if (!bone || !rc.keyframes || rc.keyframes.length === 0) continue;
+
+            animTracks.push({
+                type: 'rotation',
+                bone: bone,  // single primary bone
+                keyframes: rc.keyframes,
+            });
+        }
+    }
+
+    if (usePosition) {
+        for (const pc of (animData.position_curves || [])) {
+            const rawLeaf = leafName(pc.path);
+            if (AUX_PREFIXES.some(p => rawLeaf.startsWith(p))) continue;
+            const fbxName = resolveAnimBone(pc.path);
+            const bone = fbxName ? primaryBones[fbxName] : null;
+            if (!bone || !pc.keyframes || pc.keyframes.length === 0) continue;
+
+            animTracks.push({
+                type: 'position',
+                bone: bone,
+                keyframes: pc.keyframes,
+            });
+        }
+    }
+
+    debugLog(`Built ${animTracks.length} manual animation tracks`, 'success');
+    setStatus(`Ready to play "${animData.name}"`);
+}
+
+// ─── Apply animation at specific time to primary bones only ───
+function applyAnimationFrame(time) {
+    const convFn = getConvFn();
+
+    for (const track of animTracks) {
+        if (track.type === 'rotation') {
+            const val = slerpKeyframes(track.keyframes, time, convFn);
+            if (!val) continue;
+            track.bone.quaternion.set(val[0], val[1], val[2], val[3]);
+        } else if (track.type === 'position') {
+            const val = lerpKeyframes(track.keyframes, time);
+            if (!val) continue;
+            track.bone.position.set(val[0], val[1], val[2]);
+        }
+    }
+}
+
+// ─── Playback Controls ───
+let playbackSpeed = 1.0;
+
+function play() {
+    if (animTracks.length === 0) return;
+    isPlaying = true;
+    clock.start();
+    clock.getDelta(); // reset delta
+    setStatus(`Playing "${animData.name}"`);
+}
+
+function pause() {
+    isPlaying = false;
+    setStatus(`Paused at ${currentTime.toFixed(2)}s`);
+}
+
+function stop() {
+    isPlaying = false;
+    currentTime = 0;
+    applyAnimationFrame(0);
+    updateTimeline(0);
+    setStatus(`Stopped`);
+}
+
+function setSpeed(speed) {
+    playbackSpeed = speed;
+    document.getElementById('speed-display').textContent = speed.toFixed(1) + 'x';
+}
+
+function seekTo(time) {
+    if (animTracks.length === 0) return;
+    currentTime = Math.max(0, Math.min(time, clipDuration));
+    applyAnimationFrame(currentTime);
+    updateTimeline(currentTime);
+}
+
+function updateTimeline(time) {
+    document.getElementById('timeline').value = time;
+    document.getElementById('time-current').textContent = time.toFixed(2) + 's';
+    const fps = animData?.sample_rate || 30;
+    document.getElementById('time-frame').textContent = `Frame ${Math.round(time * fps)}`;
+}
+
+// ─── Debug Functions ───
+function logBones() {
+    if (!currentModel) { debugLog('No model loaded', 'warn'); return; }
+    debugLog('=== FBX Bone Hierarchy ===');
+    currentModel.traverse(bone => {
+        if (!bone.isBone) return;
+        const q = bone.quaternion;
+        const p = bone.position;
+        const preRot = bone.userData.preRotation;
+        let msg = `${bone.name}: quat=[${q.x.toFixed(4)}, ${q.y.toFixed(4)}, ${q.z.toFixed(4)}, ${q.w.toFixed(4)}] pos=[${p.x.toFixed(4)}, ${p.y.toFixed(4)}, ${p.z.toFixed(4)}]`;
+        if (preRot) msg += ` preRot=[${preRot.map(v => v.toFixed(1)).join(',')}]`;
+        debugLog(msg);
+    });
+}
+
+function logCompare() {
+    if (!currentModel || !animData) {
+        debugLog('Need both model and animation data', 'warn');
+        return;
+    }
+
+    debugLog('=== Rest Pose vs Animation Frame-0 ===');
+    const convFn = getConvFn();
+
+    for (const rc of (animData.rotation_curves || [])) {
+        const rawLeaf = leafName(rc.path);
+        const fbxName = resolveAnimBone(rc.path);
+        const bone = fbxName ? boneMap[fbxName] : null;
+        if (!bone || !rc.keyframes || rc.keyframes.length === 0) continue;
+
+        const kf0 = rc.keyframes[0];
+        const [ax, ay, az, aw] = convFn(kf0.value);
+        const bq = bone.quaternion;
+
+        const diff = Math.abs(ax - bq.x) + Math.abs(ay - bq.y) + Math.abs(az - bq.z) + Math.abs(aw - bq.w);
+        const type = diff < 0.01 ? 'success' : diff < 0.1 ? 'warn' : 'error';
+
+        debugLog(`${rawLeaf}→${fbxName}: FBX=[${bq.x.toFixed(4)},${bq.y.toFixed(4)},${bq.z.toFixed(4)},${bq.w.toFixed(4)}] ANIM=[${ax.toFixed(4)},${ay.toFixed(4)},${az.toFixed(4)},${aw.toFixed(4)}] diff=${diff.toFixed(4)}`, type);
+    }
+}
+
+// ─── UI Event Handlers ───
+
+// Avatar buttons
+document.querySelectorAll('#avatar-buttons .btn').forEach(btn => {
+    btn.addEventListener('click', () => loadAvatar(btn.dataset.avatar));
+});
+
+// Playback
+document.getElementById('btn-play').addEventListener('click', play);
+document.getElementById('btn-pause').addEventListener('click', pause);
+document.getElementById('btn-stop').addEventListener('click', stop);
+
+// Speed
+document.getElementById('speed-slider').addEventListener('input', (e) => {
+    setSpeed(parseFloat(e.target.value));
+});
+
+// Conversion change → re-apply animation
+document.getElementById('conv-select').addEventListener('change', () => {
+    if (animData && currentModel) {
+        // Reload avatar to reset bone poses, then re-apply
+        const key = currentAvatarKey;
+        currentAvatarKey = null; // force reload
+        loadAvatar(key);
+    }
+});
+
+// Bind pose options change → re-apply
+document.getElementById('chk-calibrate').addEventListener('change', () => {
+    if (animData && currentModel) {
+        const key = currentAvatarKey;
+        currentAvatarKey = null;
+        loadAvatar(key);
+    }
+});
+document.getElementById('chk-strip-prerot').addEventListener('change', () => {
+    if (animData && currentModel) {
+        const key = currentAvatarKey;
+        currentAvatarKey = null;
+        loadAvatar(key);
+    }
+});
+
+// Track filter changes → re-apply animation
+for (const id of ['chk-use-rotation', 'chk-use-position', 'chk-use-scale']) {
+    document.getElementById(id).addEventListener('change', () => {
+        if (animData && currentModel) {
+            const key = currentAvatarKey;
+            currentAvatarKey = null;
+            loadAvatar(key);
+        }
+    });
+}
+
+// Display toggles
+document.getElementById('chk-skeleton').addEventListener('change', (e) => {
+    if (skeletonHelper) skeletonHelper.visible = e.target.checked;
+});
+document.getElementById('chk-mesh').addEventListener('change', (e) => {
+    if (!currentModel) return;
+    currentModel.traverse(obj => { if (obj.isMesh) obj.visible = e.target.checked; });
+});
+document.getElementById('chk-wireframe').addEventListener('change', (e) => {
+    if (!currentModel) return;
+    currentModel.traverse(obj => {
+        if (obj.isMesh) {
+            const mats = Array.isArray(obj.material) ? obj.material : [obj.material];
+            mats.forEach(m => { m.wireframe = e.target.checked; });
+        }
+    });
+});
+document.getElementById('chk-grid').addEventListener('change', (e) => {
+    grid.visible = e.target.checked;
+    axes.visible = e.target.checked;
+});
+document.getElementById('chk-rotate').addEventListener('change', (e) => {
+    controls.autoRotate = e.target.checked;
+});
+
+// Debug
+document.getElementById('chk-debug').addEventListener('change', (e) => {
+    document.getElementById('debug-console').classList.toggle('visible', e.target.checked);
+});
+document.getElementById('btn-log-bones').addEventListener('click', logBones);
+document.getElementById('btn-log-compare').addEventListener('click', logCompare);
+
+// Timeline
+document.getElementById('timeline').addEventListener('input', (e) => {
+    seekTo(parseFloat(e.target.value));
+});
+
+// File upload
+document.getElementById('anim-file').addEventListener('change', (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+        try {
+            const data = JSON.parse(ev.target.result);
+            loadAnimationJSON(data);
+        } catch (err) {
+            debugLog(`Parse error: ${err.message}`, 'error');
+        }
+    };
+    reader.readAsText(file);
+});
+
+// Drag & drop
+document.body.addEventListener('dragover', (e) => { e.preventDefault(); });
+document.body.addEventListener('drop', (e) => {
+    e.preventDefault();
+    const file = e.dataTransfer.files[0];
+    if (!file || !file.name.endsWith('.json')) return;
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+        try {
+            const data = JSON.parse(ev.target.result);
+            loadAnimationJSON(data);
+        } catch (err) {
+            debugLog(`Parse error: ${err.message}`, 'error');
+        }
+    };
+    reader.readAsText(file);
+});
+
+// Keyboard shortcuts
+document.addEventListener('keydown', (e) => {
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT') return;
+    switch (e.code) {
+        case 'Space': e.preventDefault(); isPlaying ? pause() : play(); break;
+        case 'KeyS': stop(); break;
+        case 'ArrowLeft':
+            e.preventDefault();
+            seekTo(Math.max(0, (mixer?.time || 0) - 1 / (animData?.sample_rate || 30)));
+            break;
+        case 'ArrowRight':
+            e.preventDefault();
+            seekTo(Math.min(clipDuration, (mixer?.time || 0) + 1 / (animData?.sample_rate || 30)));
+            break;
+        case 'KeyD':
+            document.getElementById('chk-debug').click();
+            break;
+        case 'KeyK':
+            document.getElementById('chk-skeleton').click();
+            break;
+    }
+});
+
+// Resize
+window.addEventListener('resize', () => {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+});
+
+// ─── Render Loop ───
+function animate() {
+    requestAnimationFrame(animate);
+    controls.update();
+
+    if (isPlaying && animTracks.length > 0) {
+        const delta = clock.getDelta();
+        currentTime += delta * playbackSpeed;
+        if (currentTime >= clipDuration) {
+            currentTime = currentTime % clipDuration;
+        }
+        applyAnimationFrame(currentTime);
+        updateTimeline(currentTime);
+    }
+
+    renderer.render(scene, camera);
+}
+animate();
+
+// ─── Initialize: Load default avatar and animation ───
+loadAvatar('icaro');
+
+// Auto-load CASA animation
+fetch('../animations/CASA_full.json')
+    .then(r => r.ok ? r.json() : null)
+    .then(data => {
+        if (data) loadAnimationJSON(data);
+        else debugLog('CASA_full.json not found, use file upload', 'warn');
+    })
+    .catch(() => {
+        // Try alternate path
+        fetch('../vlibras-portal/sample/CASA_extracted/CASA_full.json')
+            .then(r => r.ok ? r.json() : null)
+            .then(data => {
+                if (data) loadAnimationJSON(data);
+                else debugLog('No default animation found, use file upload', 'warn');
+            })
+            .catch(() => debugLog('No default animation found, use file upload', 'warn'));
+    });
+
+    </script>
+</body>
+</html>
